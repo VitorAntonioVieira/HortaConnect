@@ -11,6 +11,9 @@
 <body>
     <nav>
         <div class="info">
+            <div class="logo-nav">
+                <img id="logo-nav" src="src/header-logo.png">
+            </div>
             <ul class="menu">
                 <li><a href="#">Informações</a>
                     <ul>
@@ -24,38 +27,13 @@
                 <button id="login">Log in</button>
             </div>
         </div>
-        </div>
     </nav>
-    <div class="conteiner">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=Primeiro Slide"
-                    alt="Primeiro Slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide"
-                    alt="Segundo Slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide"
-                    alt="Terceiro Slide">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
-        </a>
-    </div>
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">
+                <img src="src/imagem1 (2).jpg" alt="">
+            </li>
+        </ul>
     </div>
 </body>
 

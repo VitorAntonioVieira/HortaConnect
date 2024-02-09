@@ -24,7 +24,7 @@ body {
     font-family: sans-serif;
     padding: 25px;
     font-size: 15px;
-    margin-left: 70%;
+    margin-left: 55%;
 }
 
 .menu li {
@@ -77,4 +77,14 @@ body {
 .info{
     display: flex;
     align-items: center;
+}
+#logo-nav{
+    width: 130px;
+}
+.logo-nav{
+    margin-top: 1%;
+    margin-left: 7%;
+}
+.image-carousel{
+    margin-left: 15%;
 }

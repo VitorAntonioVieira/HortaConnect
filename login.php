@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="container">
+<!-- <div class="container"> -->
 
 <!-- <form id="login-form" method="post" action=""> -->
     <form action="">
@@ -23,8 +23,7 @@
 
     <input type="submit" value="Entrar" id="botaologin">
 
-    <p id="naotenho">Não tem conta?</p>
-    <a class="cadastre-se" href="cadastro.php">Cadastre-se</a>
+    <p id="naotenho">Não tem conta?<a class="cadastre-se" href="cadastro.php">Cadastre-se</a></p>
 
     <p id=""><a class="esqueceur" href="redefinirsenha.php">Esqueci minha senha</a></p>
 

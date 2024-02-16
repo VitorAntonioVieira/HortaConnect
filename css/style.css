@@ -16,6 +16,10 @@ body {
     font-family: arial, helvetica, sans-serif;
     font-size: 12px;
 }
+#teste-fundo{
+    width: 2300px;
+    height: 800px;
+}
 
 .menu {
     list-style: none;
@@ -24,7 +28,6 @@ body {
     font-family: sans-serif;
     padding: 25px;
     font-size: 15px;
-    margin-left: 55%;
 }
 
 .menu li {
@@ -79,12 +82,52 @@ body {
     align-items: center;
 }
 #logo-nav{
-    width: 130px;
+    width: 15%;
 }
+
 .logo-nav{
     margin-top: 1%;
     margin-left: 7%;
 }
-.image-carousel{
-    margin-left: 15%;
+
+.splide__track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#container {
+    display: inline-block;
+    position: relative;
+    margin-top: 0%;
+  }
+  
+  #container figcaption {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    font-size: 35px;
+    color: black;
+    border: solid #c0c0c0;
+    background-color: #fbfbfb;
+    width: 20%;
+    height: 90%;
+    text-align: center;
+  }
+#guia-agricultor{
+    margin-top: 8%;
+    text-align: left;
+    margin-left: 6%;
+    font-size: 30px;
+    color: #000085;
+}
+#descrição{
+    margin-top: 8%;
+    text-align: justify;
+    margin-right: 5%;
+    margin-left: 6%;
+    font-size: 28px;
+}
+#informa{
+    margin-top: 6%;
 }

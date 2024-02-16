@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <title>HortConnect</title>
+    <title>Horta Connect</title>
 </head>
 
 <body>
@@ -31,9 +31,35 @@
     <div class="splide__track">
         <ul class="splide__list">
             <li class="splide__slide">
-                <img src="src/imagem1 (2).jpg" alt="">
+                <img class="imagem1" src="src/imagem1 (2).jpg" alt="Imagem de uma horta">
             </li>
         </ul>
+    </div>
+    <div class="display">
+        <figure id="container">
+            <img id="teste-fundo" src="fundo.png" />
+            <figcaption>
+                <p id="informa">Informações</p>
+                <div id="guia">
+                    <p id="guia-agricultor">Guia do agricultor</p>
+                    <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+                <div id="guia">
+                    <p id="guia-agricultor">Soluções tecnologicas</p>
+                    <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+                <div id="guia">
+                    <p id="guia-agricultor">Mercado interno</p>
+                    <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+                <div class="ajuda">
+                <p id="informa">Informações</p>
+                </div>
+            </figcaption>
+        </figure>
     </div>
 </body>
 

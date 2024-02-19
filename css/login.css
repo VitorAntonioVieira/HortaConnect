@@ -50,4 +50,22 @@
         max-width: 500px; /* Define uma largura máxima para o formulário */
         
     }
+
+.cadastre-se{
+    color: #000085;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+.esqueceur{
+    color: #a39a9a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.voltar{
+    color: #000085;
+    text-decoration: none;
+    font-weight: bold;
+}
     

@@ -27,7 +27,7 @@
 
     <p id=""><a class="esqueceur" href="redefinirsenha.php">Esqueci minha senha</a></p>
 
-    <a href="index.php">Voltar a página inicial</a>
+    <a href="index.php" class="voltar">Voltar a página inicial</a>
     </form>
     </div>
 

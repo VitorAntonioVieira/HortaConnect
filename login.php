@@ -1,3 +1,27 @@
+<?php
+include 'crud/conexao.php';
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $sql_consulta = "SELECT * FROM usuarios WHERE email = '$email'";
+    $res = $conn->query($sql_consulta);
+
+    if ($res->num_rows == 1) {
+        $funcionario = $res->fetch_assoc();
+        // $senha_hash = $id['id'];
+
+            $_SESSION['senha'] = $usuario['senha'];
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['email'] = $usuario['email'];
+            header('Location: mercado.php');
+        } else {
+            echo "Erro ao logar 1";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +33,7 @@
 </head>
 <body>
 
-<!-- <div class="container"> -->
-
-<!-- <form id="login-form" method="post" action=""> -->
-    <form action="">
+    <form action="" method="POST">
     <h1 id="logintitulo">Login</h1>
 
     <input type="email" class="formzao" name="email" placeholder="Email" autocomplete="off"

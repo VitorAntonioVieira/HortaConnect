@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#teste-fundo {
+    width: 2300px;
+    height: 800px;
+}
+
+.menu {
+    list-style: none;
+    float: left;
+    display: flex;
+    font-family: sans-serif;
+    padding: 25px;
+    font-size: 15px;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background: #000085;
+    color: #fff;
+    -moz-box-shadow: 0 3px 10px 0 #CCC;
+    -webkit-box-shadow: 0 3px 10px 0 #ccc;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+}
+
+#login {
+    background-color: #000085;
+    font-size: 15px;
+    padding: 10px 24px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 0px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+#logo-nav {
+    width: 15%;
+}
+
+.logo-nav {
+    margin-top: 1%;
+    margin-left: 7%;
+}
+
+#foto {
+    margin-left: 26%;
+    margin-top: 3%;
+    width: 50%;
+}
+
+#container {
+    display: inline-block;
+    position: relative;
+}
+
+#container figcaption {
+    position: absolute;
+    top: 90%;
+    left: 27%;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+
+}
+#problemas {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+#problemas2{
+    font-size: 30px;
+    text-align: justify;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-right: 10%;
+}
+/* label{
+    color: #000085;
+    font-size: 30px;
+    margin-left: 5px;
+}
+form{
+    margin-left: 5%;
+} */
+/* input{
+    /* border: solid 2px rgb(157, 151, 151);
+    padding: 15px;
+    height: 20px;
+    width: 20%;
+    border-radius: 5px;
+    margin-left: 5px; */
+
+.primeiro{
+
+}

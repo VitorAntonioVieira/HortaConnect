@@ -96,12 +96,7 @@ body {
     justify-content: center;
     width: 100%;
 }
-#container {
-    display: inline-block;
-    position: relative;
-    margin-top: 0%;
-  }
-  
+
   #container figcaption {
     position: absolute;
     top: 80%;
@@ -130,4 +125,33 @@ body {
 }
 #informa{
     margin-top: 6%;
+}
+.container{
+    display: flex;
+}
+#container2 figcaption{
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    font-size: 35px;
+    color: black;
+    border: solid #c0c0c0;
+    background-color: #fbfbfb;
+    width: 20%;
+    height: 90%;
+    text-align: center;
+}
+#descrição2{
+    margin-top: 8%;
+    text-align: justify;
+    margin-right: 5%;
+    margin-left: 50%;
+    font-size: 28px;
+}
+#guia-agricultor2{
+    margin-top: 8%;
+    text-align: left;
+    margin-left: 6%;
+    font-size: 30px;
+    color: #000085;
 }

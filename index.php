@@ -18,13 +18,13 @@
                 <li><a href="#">Informações</a>
                     <ul>
                         <li><a href="#">Sobre nós</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="faleconosco.php">Contato</a></li>
                         <li><a href="#">Geral</a></li>
                     </ul>
                 </li>
             </ul>
             <div id="botao">
-                <button id="login">Log in</button>
+                <a href="login.php"><button id="login">Log in</button></a>
             </div>
         </div>
     </nav>
@@ -36,31 +36,35 @@
         </ul>
     </div>
     <div class="display">
-        <figure id="container">
-            <img id="teste-fundo" src="fundo.png" />
-            <figcaption>
-                <p id="informa">Informações</p>
-                <div id="guia">
-                    <p id="guia-agricultor">Guia do agricultor</p>
-                    <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                </div>
-                <div id="guia">
-                    <p id="guia-agricultor">Soluções tecnologicas</p>
-                    <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                </div>
-                <div id="guia">
-                    <p id="guia-agricultor">Mercado interno</p>
-                    <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                </div>
-                <div class="ajuda">
-                <p id="informa">Informações</p>
-                </div>
-            </figcaption>
-        </figure>
-    </div>
+        <img id="teste-fundo" src="fundo.png" />
+        <div class="">
+            <figure id="container">
+                <figcaption>
+                    <p id="informa">Informações</p>
+                    <div id="guia">
+                        <p id="guia-agricultor">Guia do agricultor</p>
+                        <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div id="guia">
+                        <p id="guia-agricultor">Soluções tecnologicas</p>
+                        <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div id="guia">
+                        <p id="guia-agricultor">Mercado interno</p>
+                        <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div class="ajuda">
+                        <p id="informa">Informações</p>
+                    </div>
+                </figcaption>
+
+
+            </figure>
+
+        </div>
 </body>
 
 </html>

@@ -15,11 +15,10 @@
     <img src="src/header-logo.png" class="logologin" alt="" srcset="">
 
         <input type="email" class="formzao" name="email" placeholder="Email" autocomplete="off"
-        id="email"><br><br>
+        id="email">
         <input type="text" name="text" id="" placeholder="Nome Completo">
-        <br><br>
         <input type="password" class="formzao" name="senha" placeholder="Senha" id="senha">
-        <i class="fa-regular fa-eye" id="show-password"></i><br><br>
+        <i class="fa-regular fa-eye" id="show-password"></i>
 
     <input type="submit" value="Cadastrar" id="botaocadastro">
 

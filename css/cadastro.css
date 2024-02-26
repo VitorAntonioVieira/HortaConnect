@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('../src/agricultor2.jpg');
+    background-image: url('../src/login/agricultor2.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh; 
@@ -19,7 +19,7 @@ form {
     padding: 20px;
     border-radius: 10px;
     max-width: 1000px; 
-    margin-right: 50px; 
+    margin-right: 150px; 
     width: 500px;
 }
 
@@ -32,6 +32,7 @@ input[type="text"] {
     border: 1px solid #b3b9b2d0;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
+    margin-bottom: 30px;
 }
 
 input[type="submit"] {
@@ -41,6 +42,7 @@ input[type="submit"] {
     border: transparent;
     color: #ffffff;
     font-size: large;
+    margin-bottom: 30px;
 }
 
 .cadastre-se {

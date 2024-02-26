@@ -8,7 +8,7 @@
 </head>
 <body>
     <form action="">
-        <img src="src/header-logo.png" class="logologin" alt="" srcset="">
+        <img src="src/general/header-logo.png" class="logologin" alt="" srcset="">
         <input type="email" class="formzao" name="email" placeholder="Email" autocomplete="off" id="email">
         <input type="password" class="formzao" name="senha" placeholder="Senha" id="senha">
         <i class="fa-regular fa-eye" id="show-password"></i>

@@ -62,33 +62,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <form action="" method="post">
         <div class="primeiro">
-            <label for="nomeCompleto">Nome completo:
-                <br>
-                <input type="text" name="nome" required>
-            </label>
-
-            <label for="cidade">Cidade:
-                <br>
-                <input type="text" name="cidade" required>
-            </label>
-
+            <div class="display">
+                <div class="teste">
+                    <label for="nomeCompleto">Nome completo:</label>
+                    <input type="text" placeholder="Nome completo" name="nome" required>
+                </div>
+                <div class="teste">
+                    <label id="cdd" for="cidade">Cidade:</label>
+                    <input id="cdds" type="text" placeholder="Cidade" name="cidade" required>
+                </div>
+            </div>
         </div>
-        <div class="segundo">
-            <label for="telefone">Número de Telefone:
-                <br>
-                <input type="tel" name="telefone" required>
-            </label>
-
-            <label for="email">email:
-                <br>
-                <input type="email" name="email" required>
-            </label>
-
-        </div>
-        <label for="observação">mensagem:</label>
-        <input type="text" name="observacao" required>
-
-        <button type="submit">Enviar</button>
+        <div class="segunda">
+            <div class="display">
+                <div class="teste">
+                    <label for="telefone">Número de Telefone:</label>
+                    <input type="tel" placeholder="Número de telefone" name="telefone" required>
+                </div>
+                <div class="teste">
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+            </div>
+            <div class="mensagem">
+                <label for="observação">Mensagem:</label>
+                <input id="mensagem" type="text" placeholder="Mensagem" name="observacao" required>
+            </div>
+            <p id="politica">Politicas e termo de privacidade</p>
+            <button type="submit">Enviar</button>
     </form>
 </body>
 

@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url('../src/agricultor1.jpg');
+    background-image: url('../src/agricultor2.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh; 
@@ -19,28 +19,20 @@ form {
     padding: 20px;
     border-radius: 10px;
     max-width: 1000px; 
-    margin-right: 150px; 
+    margin-right: 50px; 
     width: 500px;
 }
 
-input[type="password"] {
+input[type="email"],
+input[type="password"],
+input[type="text"] {
     width: 95%;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     border: 1px solid #b3b9b2d0;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
 }
-
-input[type="email"] {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 30px;
-    border: 1px solid #b3b9b2d0;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-}
-
 
 input[type="submit"] {
     background-color: #58fa5a;
@@ -80,12 +72,4 @@ input[type="submit"] {
 }
 .container{
     text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-    form {
-        width: 90%;
-        margin-right: auto; /* Alinha o formulário no centro */
-        margin-left: auto; /* Alinha o formulário no centro */
-    }
 }

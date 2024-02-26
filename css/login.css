@@ -1,71 +1,91 @@
-*{
-   font-family: 'Segoe UI', sans-serif;; 
-
+* {
+    font-family: 'Segoe UI', sans-serif;
+    /* margin: 0 auto; */
 }
 
- body {
-        background-image: url('../src/agricultor1.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 120vh;
-        width: 100vh;
-    }
-    
-    /* .container {
-            height: 75%;
-            padding: 15px;
-            padding-top: 20px;
-            background-color: #f9f9f9;
-            margin-left: 1200px;
-            align-items: flex-end;
-            justify-content: flex-end;
-            display: flex;
-            text-align: center;
-        } */
-    
-     input[type="email"], [type="password"]{
-            width: 95%;
-            padding: 10px;
-            padding-left: 10px !important;
-            margin-bottom: 10px;
-            border: 1px solid #b3b9b2d0;
-            background-color: #ffffff;
-            color: rgb(0, 0, 0);
-        }
-     input[type="submit"]{
-        background-color: #58fa5a;
-        width: 100%;
-        padding: 10px;
-        border: transparent;
-        color: #ffffff;
-        font-size: large;
-            
-        }
+body {
+    background-image: url('../src/login/agricultor1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    margin: 0; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px; 
+    margin-right: 150px; 
+    width: 500px;
+}
+
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #b3b9b2d0;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #b3b9b2d0;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
 
 
-    form {
-        background-color: white;
-        padding: 20px;
-        border-radius: 10px;
-        max-width: 500px; /* Define uma largura máxima para o formulário */
-        
-    }
+input[type="submit"] {
+    background-color: #58fa5a;
+    width: 100%;
+    padding: 10px;
+    border: transparent;
+    color: #ffffff;
+    font-size: large;
+}
 
-.cadastre-se{
+.cadastre-se {
     color: #000085;
     text-decoration: none;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-.esqueceur{
+.esqueceur {
     color: #a39a9a;
     text-decoration: none;
     font-weight: bold;
+    
 }
 
-.voltar{
+.voltar {
     color: #000085;
     text-decoration: none;
     font-weight: bold;
+    text-align: center;
+    font-size: large;
 }
-    
+
+.logologin {
+    width: 350px;
+    height: 180px;
+    display: block; 
+    margin: 0 auto;
+}
+.container{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+        margin-right: auto; /* Alinha o formulário no centro */
+        margin-left: auto; /* Alinha o formulário no centro */
+    }
+}

@@ -18,7 +18,7 @@
     <nav>
         <div class="info">
             <div class="logo-nav">
-                <img id="logo-nav" src="src/header-logo.png">
+                <img id="logo-nav" src="src/general/header-logo.png">
             </div>
             <ul class="menu">
                 <li><a href="#">Informações</a>
@@ -37,7 +37,7 @@
     <div class="splide__track">
         <ul class="splide__list">
             <li class="splide__slide">
-                <img class="imagem1" src="src/imagem1 (2).jpg" alt="Imagem de uma horta">
+                <img class="imagem1" src="src/general/imagem1 (2).jpg" alt="Imagem de uma horta">
             </li>
         </ul>
     </div>

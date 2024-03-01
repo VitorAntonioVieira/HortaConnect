@@ -50,10 +50,34 @@ form {
 h1 {
   color: rgb(255, 255, 255);
   font-weight: bold;
-  margin-bottom: 20px;
+  /* margin-bottom: 30px; */
 }
 .social-container {
   margin: 20px 0;
+  margin-bottom: 10px;
+}
+
+.voltarlogin {
+  color: #b6b5b5 !important; /* Ensure white color */
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px; /* Adjust margin from top */
+  display: block;
+}
+
+.social-container2 {
+  margin: -29px 0 10px; /* Adjust the top margin to lift it up */
+  margin-bottom: 10px
+}
+
+.social-container2 a {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
 }
 .social-container a {
   display: inline-flex;
@@ -65,8 +89,6 @@ h1 {
   width: 40px;
 }
 
-
-
 #ins {
   color: rgb(255, 255, 255);
   font-size: 25px;
@@ -77,6 +99,15 @@ h1 {
   font-size: 25px;
   text-decoration: none;
 }
+
+.esqueceur {
+  color: #b6b5b5 !important; /* Ensure white color */
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px; /* Adjust margin from top */
+  display: block;
+}
+
 input {
   background-color: rgb(254, 243, 243);
   border: none;
@@ -102,6 +133,7 @@ button {
   left: 0;
   width: 50%;
   z-index: 2;
+  /* margin-top: 10px; */
 }
 
 .logologin {

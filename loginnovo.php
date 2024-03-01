@@ -15,7 +15,7 @@
     <div class="container" id="container">
       <div class="form-container sign-up-container">
         <form action="#"><br><br>
-          <h1>Cadastre-se!</h1>
+          <h1>Cadastre-se!</h1><br>
 
           <input type="email" placeholder="Email" id="mail" />
           <input type="text" placeholder="Nome Completo" id="name" />
@@ -34,16 +34,18 @@
         </form>
       </div>
       <div class="form-container sign-in-container">
-        <form action="#">
-          <h1>Login</h1>
+        <form action="#" method="POST">
+        <br><br>
+          <h1>Login</h1><br>
 
           <input type="email" placeholder="Email" id="mail" />
           <input type="password" placeholder="Senha" id="pass" />
           <button>Entrar</button>
+          <a class="esqueceur" href="redefinirsenha.php">Esqueci minha senha</a>
           <br /><br /><br /><br /><br /><br />
 
           <div class="social-container">
-            <a href="https:www.instagram.com" class="social" id="ins">
+            <a href="https://www.instagram.com" class="social" id="ins">
               <i class="fab fa-instagram"> </i>
             </a>
             <a href="https://www.twitter.com" class="social" id="tw">

@@ -50,7 +50,7 @@ form {
 h1 {
   color: rgb(255, 255, 255);
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .social-container {
   margin: 20px 0;
@@ -83,7 +83,7 @@ input {
   text-decoration: none;
   width: 100%;
   margin: 8px 0;
-  padding: 12px 15px;
+  padding: 10px 15px;
   margin-bottom: 20px;
 
   border-radius: 10px;
@@ -211,4 +211,8 @@ p {
 }
 #signIn {
   color: rgb(24, 71, 40);
+}
+#pagina-principal{
+  color: aliceblue;
+  margin-bottom: 5px;
 }

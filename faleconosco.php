@@ -34,19 +34,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <nav>
         <div class="info">
             <div class="logo-nav">
-                <img id="logo-nav" src="src/header-logo.png">
+                <a href="index.php">
+                    <img id="logo-nav" src="src/general/header-logo.png"></a>
             </div>
             <ul class="menu">
                 <li><a href="#">Informações</a>
                     <ul>
-                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="sobrenos.php">Sobre nós</a></li>
                         <li><a href="faleconosco.php">Contato</a></li>
-                        <li><a href="#">Geral</a></li>
+                        <li><a href="index.php">Geral</a></li>
                     </ul>
                 </li>
             </ul>
             <div id="botao">
-                <a href="login.php"><button id="login">Log in</button></a>
+                <a href="loginnovo.php"><button id="login">Log in</button></a>
             </div>
         </div>
     </nav>
@@ -88,7 +89,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="observação">Mensagem:</label>
                 <input id="mensagem" type="text" placeholder="Mensagem" name="observacao" required>
             </div>
-            <p id="politica">Politicas e termo de privacidade</p>
+            <div>
+            </div>
+            <p id="politica">Politicas de privacidade</p>
+            <div class="check">
+                <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter" />
+                <label id="li" for="subscribeNews"> Eu li e aceito </label>
+            </div>
             <button type="submit">Enviar</button>
     </form>
 </body>

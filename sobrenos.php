@@ -12,19 +12,19 @@
     <nav>
         <div class="info">
             <div class="logo-nav">
-                <img id="logo-nav" src="src/header-logo.png">
+                <img id="logo-nav" src="src/general/header-logo.png">
             </div>
             <ul class="menu">
                 <li><a href="#">Informações</a>
                     <ul>
                         <li><a href="sobrenos.php">Sobre nós</a></li>
                         <li><a href="faleconosco.php">Contato</a></li>
-                        <li><a href="#">Geral</a></li>
+                        <li><a href="index.php">Geral</a></li>
                     </ul>
                 </li>
             </ul>
             <div id="botao">
-                <a href="login.php"><button id="login">Log in</button></a>
+                <a href="loginnovo.php"><button id="login">Log in</button></a>
             </div>
         </div>
     </nav>

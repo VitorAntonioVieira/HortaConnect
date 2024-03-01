@@ -1,3 +1,27 @@
+<?php
+include 'crud/conexao.php';
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $sql_consulta = "SELECT * FROM usuarios WHERE email = '$email'";
+    $res = $conn->query($sql_consulta);
+
+    if ($res->num_rows == 1) {
+        $funcionario = $res->fetch_assoc();
+        // $senha_hash = $id['id'];
+
+            $_SESSION['senha'] = $usuario['senha'];
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['email'] = $usuario['email'];
+            header('Location: mercado.php');
+        } else {
+            echo "Erro ao logar 1";
+        }
+    }
+    session_destroy();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,14 +41,14 @@
         <form action="#"><br><br>
           <h1>Cadastre-se!</h1>
 
-          <input type="email" placeholder="Email" id="mail" />
-          <input type="text" placeholder="Nome Completo" id="name" />
-          <input type="password" placeholder="Senha" id="pass" />
+          <input type="email" placeholder="Email" id="email" />
+          <input type="text" name="nome" placeholder="Nome Completo" id="name" />
+          <input type="password" name="senha" placeholder="Senha" id="senha" />
           <button>Cadastrar</button>
           <br /><br /><br /><br />
 
           <div class="social-container">
-            <a href="https:www.instagram.com" class="social" id="ins">
+            <a href="https:www.instagram.com/hortaConnect/" class="social" id="ins">
               <i class="fab fa-instagram"> </i>
             </a>
             <a href="https://www.twitter.com" class="social" id="tw">
@@ -34,22 +58,23 @@
         </form>
       </div>
       <div class="form-container sign-in-container">
-        <form action="#">
+        <form action="#" method="POST">
           <h1>Login</h1>
 
-          <input type="email" placeholder="Email" id="mail" />
-          <input type="password" placeholder="Senha" id="pass" />
-          <button>Entrar</button>
+          <input type="email" name="email" placeholder="Email" id="mail" />
+          <input type="password" name="senha"placeholder="Senha" id="pass" />
+          <input type="submit" value="Entrar" id="botaologin">
           <br /><br /><br /><br /><br /><br />
 
           <div class="social-container">
-            <a href="https:www.instagram.com" class="social" id="ins">
+            <a href="https:www.instagram.com/hortaConnect/" class="social" id="ins">
               <i class="fab fa-instagram"> </i>
             </a>
             <a href="https://www.twitter.com" class="social" id="tw">
               <i class="fab fa-twitter"></i>
             </a>
           </div>
+         <a href="index.php"> <p id="pagina-principal">Voltar para pagina principal</p></a>
         </form>
       </div>
       <div class="overlay-container">

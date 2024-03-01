@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Horta Connect</title>
 </head>
 
@@ -17,14 +23,14 @@
             <ul class="menu">
                 <li><a href="#">Informações</a>
                     <ul>
-                        <li><a href="#">Sobre nós</a></li>
-                        <li><a href="#">Contato</a></li>
-                        <li><a href="#">Geral</a></li>
+                        <li><a href="sobrenos.php">Sobre nós</a></li>
+                        <li><a href="faleconosco.php">Contato</a></li>
+                        <li><a href="index.php">Geral</a></li>
                     </ul>
                 </li>
             </ul>
             <div id="botao">
-                <button id="login">Log in</button>
+                <a href="loginnovo.php"><button id="login">Log in</button></a>
             </div>
         </div>
     </nav>
@@ -36,30 +42,78 @@
         </ul>
     </div>
     <div class="display">
-        <figure id="container">
-            <img id="teste-fundo" src="src/general/fundo.png" />
-            <figcaption>
-                <p id="informa">Informações</p>
-                <div id="guia">
-                    <p id="guia-agricultor">Guia do agricultor</p>
-                    <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
+        <div class="primeiro">
+            <img id="teste-fundo" src="imagem-fundo.png" />
+            <div id="container">
+                <div class="box-info">
+                    <p id="informa">Informações</p>
+                    <div div="guia">
+                        <p id="guia-agricultor">Guia do agricultor</p>
+                        <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div div="guia">
+                        <p id="guia-agricultor">Soluções tecnologicas</p>
+                        <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
+                    <div div="guia">
+                        <p id="guia-agricultor">Mercado interno</p>
+                        <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+                    </div>
                 </div>
-                <div id="guia">
-                    <p id="guia-agricultor">Soluções tecnologicas</p>
-                    <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
+                <div class="box-info">
+                    <p id="informa">Posso ajudar?</p>
+                    <div div="guia">
+                        <p id="selecionar">Selecione as informações</p>
+                        <form>
+                            <input type="text" placeholder="Tipo de solo" name="solo" />
+                            <input type="text" placeholder="Cultura" name="cultura" />
+                            <input type="text" placeholder="Pragas" name="pragas" />
+                        </form>
+                        <button id="botao-form" type="submit">Pesquisar</button>
+                    </div>
                 </div>
-                <div id="guia">
-                    <p id="guia-agricultor">Mercado interno</p>
-                    <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    </p>
-                </div>
-                <div class="ajuda">
-                <p id="informa">Informações</p>
-                </div>
-            </figcaption>
-        </figure>
+            </div>
+        </div>
+    </div>
+    <div class="info-text">
+        <h2>Bem vindos ao <span id="cor">HORTA CONNECT</span></h2>
+        <p id="informacao-horta">Somos um projeto criado para ajudar produtores rurais, com o objetivo de maximizar o
+            uso da tecnologia nas
+            produções, auxiliando no impacto econômico e social, de modo que não haja impacto no meio ambiente. </p>
+    </div>
+    <div class="img-fundo2">
+        <img id="teste-fundo2" src="img-fundo2.png" />
+        <div class="imagens2">
+            <div class="">
+                <span id="icone" class="material-symbols-outlined">
+                    download
+                </span>
+                <p id="baixar">Baixe nosso app</p>
+                <p id="baixar-info">Baixe o nosso App para ver as<br> novidades, e o mercado de
+                    produtos!</p>
+            </div>
+            <div class="icone2">
+                <a href="faleconosco.php">
+                <span id="icone" class="material-symbols-outlined">
+                    info
+                </span></a>
+                <p id="baixar">Solicitar Assistência</p>
+                <p id="baixar-info">Precisa de alguma assistência <br>para os produtos Horta Connect? Nossa
+                    equipe<br> está a disposição!</p>
+            </div>
+            <div class="icone3">
+                <a href="sobrenos.php">
+                <span id="icone" class="material-symbols-outlined">
+                    person
+                </span></a>
+                <p id="baixar">Quem Somos</p>
+                <p id="baixar-info"> Buscamos liderar a transformação digital<br> do agronegócio, por meio
+                    de soluções <br>tecnológicas.</p>
+            </div>
+        </div>
     </div>
 </body>
 

@@ -1,95 +1,103 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST["email"];
-    $senha = $_POST["senha"];
-    $telefone = $_POST["telefone"];
+include 'crud/conexao.php';
+session_start();
 
- "Email: " . htmlspecialchars($email) . "<br>";
-    "Senha: " . htmlspecialchars($senha) . "<br>";
- "Telefone: " . htmlspecialchars($telefone) . "<br>";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST["nome"];
+    $cidade = $_POST["cidade"];
+    $telefone = $_POST["telefone"];
+    $email = $_POST["email"];
+    $observacao = $_POST["observacao"];
+
+    $sql = "INSERT INTO faleconosco (nomecompleto, cidade, telefone, email, observacao) VALUES ('$nome', '$cidade', '$telefone', '$email', '$observacao')";
+
+    if ($conn->query($sql) === TRUE) {
+        header("Location: agradecimento.php");
+    } else {
+        echo "Erro ao inserir notas: " . $conn->error;
+    }
+
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-R5xP5N6Hz8pKK8DJTR7p8/EIbWiX1/fmITtrUc0MlM8T4GCx/Mk2aKTZb82s35YELL9PJx1Ft2ZZkmw+NUsAew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-   body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #e1f5e9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        .container {
-            max-width: 400px;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            border: 2px solid bl; /* Adiciona a borda */
-        }
-
-        h2 {
-            color: #4caf50;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        label {
-            margin-bottom: 8px;
-            color: #4caf50;
-        }
-
-        input {
-            padding: 10px;
-            margin-bottom: 16px;
-        }
-
-        input[type="submit"] {
-            background-color: #4caf50;
-            color: #fff;
-            cursor: pointer;
-            border: none;
-            padding: 12px;
-            border-radius: 4px;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-
-        .icon {
-            color: #4caf50;
-            margin-right: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/fale-conosco.css" />
     <title>Fale Conosco</title>
 </head>
+
 <body>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <label for="email">Email:</label>
-        <input type="email" name="email" required>
-
-        <label for="senha">Senha:</label>
-        <input type="password" name="senha" required>
-
-        <label for="telefone">Número de Telefone:</label>
-        <input type="tel" name="telefone" required>
-
-        <button type="submit">Enviar</button>
+    <nav>
+        <div class="info">
+            <div class="logo-nav">
+                <a href="index.php">
+                    <img id="logo-nav" src="src/general/header-logo.png"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Informações</a>
+                    <ul>
+                        <li><a href="sobrenos.php">Sobre nós</a></li>
+                        <li><a href="faleconosco.php">Contato</a></li>
+                        <li><a href="index.php">Geral</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="botao">
+                <a href="loginnovo.php"><button id="login">Log in</button></a>
+            </div>
+        </div>
+    </nav>
+    <figure id="container">
+        <img id="foto" src="src/colheita.jpg" />
+        <figcaption>Assitência</figcaption>
+    </figure>
+    <div class="infomações">
+        <p id="problemas">Está com problemas? Entre em contato conosco!</p>
+        <p id="problemas2">Para nós, a satisfação do cliente é essencial. Por esta razão garantimos um serviço de
+            assistência técnica eficiente. Aqui você pode resolver seus problemas, e tirar dúvidas sobre os produtos da
+            Horta Connect!</p>
+    </div>
+    <form action="" method="post">
+        <div class="primeiro">
+            <div class="display">
+                <div class="teste">
+                    <label for="nomeCompleto">Nome completo:</label>
+                    <input type="text" placeholder="Nome completo" name="nome" required>
+                </div>
+                <div class="teste">
+                    <label id="cdd" for="cidade">Cidade:</label>
+                    <input id="cdds" type="text" placeholder="Cidade" name="cidade" required>
+                </div>
+            </div>
+        </div>
+        <div class="segunda">
+            <div class="display">
+                <div class="teste">
+                    <label for="telefone">Número de Telefone:</label>
+                    <input type="tel" placeholder="Número de telefone" name="telefone" required>
+                </div>
+                <div class="teste">
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+            </div>
+            <div class="mensagem">
+                <label for="observação">Mensagem:</label>
+                <input id="mensagem" type="text" placeholder="Mensagem" name="observacao" required>
+            </div>
+            <div>
+            </div>
+            <p id="politica">Politicas de privacidade</p>
+            <div class="check">
+                <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter" />
+                <label id="li" for="subscribeNews"> Eu li e aceito </label>
+            </div>
+            <button type="submit">Enviar</button>
     </form>
 </body>
-</html>
 
+</html>

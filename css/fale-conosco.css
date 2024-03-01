@@ -1,0 +1,215 @@
+:root {
+    --m-green: #58fa5a;
+    --m-blue: #000085;
+    --black: #181818;
+    --white: #fbfbfb;
+    --s-green: #3f753a;
+    --y-white: #e5dca4;
+    --m-font: 'Segoe UI', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#teste-fundo {
+    width: 2300px;
+    height: 800px;
+}
+
+.menu {
+    list-style: none;
+    float: left;
+    display: flex;
+    font-family: sans-serif;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background: #000085;
+    color: #fff;
+    -moz-box-shadow: 0 3px 10px 0 #CCC;
+    -webkit-box-shadow: 0 3px 10px 0 #ccc;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+}
+
+#login {
+    background-color: #000085;
+    font-size: 15px;
+    padding: 10px 24px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+#logo-nav {
+    width: 15%;
+}
+
+.logo-nav {
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+#foto {
+    margin-left: 26%;
+    margin-top: 3%;
+    width: 50%;
+}
+
+#container {
+    display: inline-block;
+    position: relative;
+}
+
+#container figcaption {
+    position: absolute;
+    top: 90%;
+    left: 27%;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+
+}
+
+#problemas {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+#problemas2 {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-right: 10%;
+}
+
+form {
+    width: 900px;
+}
+
+.primeiro {
+    margin-left: 35%;
+    margin-top: 5%;
+    justify-content: end;
+}
+
+.segunda {
+    margin-left: 35%;
+    margin-top: 5%;
+    align-items: center;
+}
+
+input {
+    font-size: 15px;
+    border: #000085 solid 1px;
+    border-radius: 5px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+}
+
+label {
+    font-size: 20px;
+    color: #000085;
+}
+
+.display {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mensagem {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+#mensagem {
+    width: 80%;
+    height: 90%;
+    padding: 15%;
+}
+
+#politica {
+    font-size: 20px;
+    margin-top: 10%;
+text-decoration:underline;
+}
+button{
+    padding: 10px;
+    margin-top: 5%;
+    background-color: #58fa5a;
+    color: #ffffff;
+    font-weight: bold;
+    border: #ffffff solid 1px;
+    border-radius: 5px;
+    width: 60%;
+    margin-left: 35%;
+    margin-bottom: 15%;
+}
+#li{
+    font-size: 10px;
+}
+.check{
+    display: flex;
+}
+#subscribeNews{
+    margin-left: 0%;
+    width: 25px;
+}
+#politica{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+

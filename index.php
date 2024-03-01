@@ -49,17 +49,17 @@
                     <p id="informa">Informações</p>
                     <div div="guia">
                         <p id="guia-agricultor">Guia do agricultor</p>
-                        <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        <p id="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </p>
                     </div>
                     <div div="guia">
                         <p id="guia-agricultor">Soluções tecnologicas</p>
-                        <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        <p id="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </p>
                     </div>
                     <div div="guia">
                         <p id="guia-agricultor">Mercado interno</p>
-                        <p id="descrição">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        <p id="descricao">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                             <input type="text" placeholder="Cultura" name="cultura" />
                             <input type="text" placeholder="Pragas" name="pragas" />
                         </form>
-                        <button id="botao-form" type="submit">Pesquisar</button>
+                        <button class="botao-form transitionScale" type="submit">Pesquisar</button>
                     </div>
                 </div>
             </div>

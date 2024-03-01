@@ -18,11 +18,6 @@ body {
     font-size: 12px;
 }
 
-#teste-fundo {
-    width: 2300px;
-    height: 800px;
-}
-
 .menu {
     list-style: none;
     float: left;
@@ -82,9 +77,18 @@ body {
     width: 100%;
 }
 
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .info {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
 }
 
 #logo-nav {
@@ -120,16 +124,12 @@ body {
 #problemas {
     font-size: 20px;
     font-weight: bold;
-    margin-left: 15%;
     margin-top: 5%;
 }
 
 #problemas2 {
     font-size: 20px;
     text-align: justify;
-    margin-left: 10%;
-    margin-top: 2%;
-    margin-right: 10%;
 }
 
 form {
@@ -137,13 +137,11 @@ form {
 }
 
 .primeiro {
-    margin-left: 35%;
     margin-top: 5%;
     justify-content: end;
 }
 
 .segunda {
-    margin-left: 35%;
     margin-top: 5%;
     align-items: center;
 }
@@ -172,7 +170,6 @@ label {
     height: 100%;
     width: 100%;
     margin-top: 10%;
-    margin-left: 5%;
 }
 
 #mensagem {
@@ -195,7 +192,6 @@ button{
     border: #ffffff solid 1px;
     border-radius: 5px;
     width: 60%;
-    margin-left: 35%;
     margin-bottom: 15%;
 }
 #li{
@@ -213,3 +209,18 @@ button{
     margin-bottom: 15px;
 }
 
+.teste {
+    width: 40%;
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    
+}

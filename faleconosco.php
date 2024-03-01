@@ -1,23 +1,22 @@
 <?php
-include 'crud/conexao.php';
-session_start();
+//include 'crud/conexao.php';
+// session_start();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = $_POST["nome"];
-    $cidade = $_POST["cidade"];
-    $telefone = $_POST["telefone"];
-    $email = $_POST["email"];
-    $observacao = $_POST["observacao"];
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     $nome = $_POST["nome"];
+//     $cidade = $_POST["cidade"];
+//     $telefone = $_POST["telefone"];
+//     $email = $_POST["email"];
+//     $observacao = $_POST["observacao"];
 
-    $sql = "INSERT INTO faleconosco (nomecompleto, cidade, telefone, email, observacao) VALUES ('$nome', '$cidade', '$telefone', '$email', '$observacao')";
+//     $sql = "INSERT INTO faleconosco (nomecompleto, cidade, telefone, email, observacao) VALUES ('$nome', '$cidade', '$telefone', '$email', '$observacao')";
 
-    if ($conn->query($sql) === TRUE) {
-        header("Location: agradecimento.php");
-    } else {
-        echo "Erro ao inserir notas: " . $conn->error;
-    }
-
-}
+//     if ($conn->query($sql) === TRUE) {
+//         header("Location: agradecimento.php");
+//     } else {
+//         echo "Erro ao inserir notas: " . $conn->error;
+//     }
+// }
 ?>
 
 <!DOCTYPE html>
@@ -55,49 +54,54 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <img id="foto" src="src/colheita.jpg" />
         <figcaption>Assitência</figcaption>
     </figure>
-    <div class="infomações">
-        <p id="problemas">Está com problemas? Entre em contato conosco!</p>
-        <p id="problemas2">Para nós, a satisfação do cliente é essencial. Por esta razão garantimos um serviço de
-            assistência técnica eficiente. Aqui você pode resolver seus problemas, e tirar dúvidas sobre os produtos da
-            Horta Connect!</p>
-    </div>
-    <form action="" method="post">
-        <div class="primeiro">
-            <div class="display">
-                <div class="teste">
-                    <label for="nomeCompleto">Nome completo:</label>
-                    <input type="text" placeholder="Nome completo" name="nome" required>
-                </div>
-                <div class="teste">
-                    <label id="cdd" for="cidade">Cidade:</label>
-                    <input id="cdds" type="text" placeholder="Cidade" name="cidade" required>
-                </div>
-            </div>
+    <div class="content">
+        <div class="info">
+            <p id="problemas">Está com problemas? Entre em contato conosco!</p>
+            <p id="problemas2">Para nós, a satisfação do cliente é essencial. Por esta razão garantimos um serviço de
+                assistência técnica eficiente. Aqui você pode resolver seus problemas, e tirar dúvidas sobre os produtos
+                da
+                Horta Connect!
+            </p>
         </div>
-        <div class="segunda">
-            <div class="display">
-                <div class="teste">
-                    <label for="telefone">Número de Telefone:</label>
-                    <input type="tel" placeholder="Número de telefone" name="telefone" required>
+        <form action="" method="post">
+            <div class="primeiro">
+                <div class="display">
+                    <div class="teste">
+                        <label for="nomeCompleto">Nome completo:</label>
+                        <input type="text" placeholder="Nome completo" name="nome" required>
+                    </div>
+                    <div class="teste">
+                        <label id="cdd" for="cidade">Cidade:</label>
+                        <input id="cdds" type="text" placeholder="Cidade" name="cidade" required>
+                    </div>
                 </div>
-                <div class="teste">
-                    <label for="email">Email:</label>
-                    <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="segunda">
+                <div class="display">
+                    <div class="teste">
+                        <label for="telefone">Número de Telefone:</label>
+                        <input type="tel" placeholder="Número de telefone" name="telefone" required>
+                    </div>
+                    <div class="teste">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="Email" name="email" required>
+                    </div>
                 </div>
+                <div class="mensagem">
+                    <label for="observação">Mensagem:</label>
+                    <input id="mensagem" type="text" placeholder="Mensagem" name="observacao" required>
+                </div>
+                <div>
+                </div>
+                <p id="politica">Politicas de privacidade</p>
+                <div class="check">
+                    <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter" />
+                    <label id="li" for="subscribeNews"> Eu li e aceito </label>
+                </div>
+                <button type="submit">Enviar</button>
             </div>
-            <div class="mensagem">
-                <label for="observação">Mensagem:</label>
-                <input id="mensagem" type="text" placeholder="Mensagem" name="observacao" required>
-            </div>
-            <div>
-            </div>
-            <p id="politica">Politicas de privacidade</p>
-            <div class="check">
-                <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter" />
-                <label id="li" for="subscribeNews"> Eu li e aceito </label>
-            </div>
-            <button type="submit">Enviar</button>
-    </form>
+        </form>
+    </div>
 </body>
 
 </html>

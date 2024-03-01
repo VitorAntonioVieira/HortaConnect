@@ -19,7 +19,7 @@
 
           <input type="email" placeholder="Email" id="mail" />
           <input type="password" placeholder="Senha" id="pass" />
-          <button>Entrar</button>
+          <button>Redefinir</button>
           <p id=""><a class="voltarlogin" href="loginnovo.php">Voltar para o login</a></p>
           <br /><br /><br /><br /><br /><br />
 

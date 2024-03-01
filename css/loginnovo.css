@@ -244,3 +244,28 @@ p {
 #signIn {
   color: rgb(24, 71, 40);
 }
+
+/* Estilos base */
+/* Aqui ficam os estilos que se aplicam a todas as telas */
+
+/* Estilos para telas de até 768px de largura */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%; /* Reduz a largura do container */
+  }
+
+  .form-container {
+    width: 100%; /* Define a largura do formulário para ocupar toda a largura */
+  }
+
+  /* Outras modificações de estilo para telas menores */
+}
+
+/* Estilos para telas de até 480px de largura */
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%; /* Largura total para telas pequenas */
+  }
+
+  /* Outras modificações de estilo para telas muito pequenas */
+}

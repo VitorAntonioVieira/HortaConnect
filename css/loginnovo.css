@@ -258,6 +258,12 @@ p {
     width: 100%; /* Define a largura do formulário para ocupar toda a largura */
   }
 
+  .overlay-container{
+    display: none;
+
+  }
+
+
   /* Outras modificações de estilo para telas menores */
 }
 
@@ -265,6 +271,11 @@ p {
 @media only screen and (max-width: 480px) {
   .container {
     width: 100%; /* Largura total para telas pequenas */
+  }
+
+  .overlay-container{
+    display: none;
+
   }
 
   /* Outras modificações de estilo para telas muito pequenas */

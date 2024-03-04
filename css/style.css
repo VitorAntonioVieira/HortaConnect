@@ -18,6 +18,13 @@ body {
     font-size: 12px;
 }
 
+nav {
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 0;
+    z-index: 1000;
+}
 
 .menu {
     list-style: none;
@@ -70,24 +77,34 @@ body {
 #login {
     background-color: #000085;
     font-size: 15px;
-    padding: 10px 24px;
     border-radius: 5px;
     color: #ffffff;
     border: 0px;
+    width: 10vh;
+    height: 5vh;
 }
 
 .info {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 #logo-nav {
-    width: 15%;
+    width: 100%;
 }
 
 .logo-nav {
     margin-top: 1%;
-    margin-left: 2%;
+    margin-left: 3%;
+    width: 9.5vw;
+}
+
+.nav-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 2vw;
 }
 
 #guia-agricultor {

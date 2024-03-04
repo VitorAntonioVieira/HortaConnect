@@ -18,12 +18,20 @@ body {
     font-size: 12px;
 }
 
+nav {
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 0;
+    z-index: 1000;
+}
+
 .menu {
     list-style: none;
     float: left;
     display: flex;
     font-family: sans-serif;
-    padding: 10px;
+    padding: 20px;
     font-size: 15px;
 }
 
@@ -69,12 +77,34 @@ body {
 #login {
     background-color: #000085;
     font-size: 15px;
-    padding: 10px 24px;
     border-radius: 5px;
     color: #ffffff;
     border: 0px;
-    margin-left: 0px;
+    width: 10vh;
+    height: 5vh;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo-nav {
     width: 100%;
+}
+
+.logo-nav {
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 9.5vw;
+}
+
+.nav-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 2vw;
 }
 
 .content {
@@ -83,23 +113,6 @@ body {
     align-items: center;
     flex-direction: column;
 }
-
-.info {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 80%;
-}
-
-#logo-nav {
-    width: 15%;
-}
-
-.logo-nav {
-    margin-top: 1%;
-    margin-left: 5%;
-}
-
 #foto {
     margin-left: 26%;
     margin-top: 3%;
@@ -118,7 +131,13 @@ body {
     font-size: 40px;
     color: white;
     font-weight: bold;
+}
 
+.infos {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    text-align: justify;
 }
 
 #problemas {
@@ -133,26 +152,21 @@ body {
 }
 
 form {
-    width: 900px;
+    width: 60vw;
 }
 
 .primeiro {
     margin-top: 5%;
-    justify-content: end;
-}
-
-.segunda {
-    margin-top: 5%;
-    align-items: center;
+    width: 60vw;
 }
 
 input {
     font-size: 15px;
     border: #000085 solid 1px;
     border-radius: 5px;
-    padding: 15px;
+    padding: 1.5vw;
     display: block;
-    width: 100%;
+    width: 25vw;
 }
 
 label {
@@ -162,36 +176,49 @@ label {
 
 .display {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.mensagem-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
 }
 
 .mensagem {
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 #mensagem {
-    width: 80%;
-    height: 90%;
-    padding: 15%;
+    width: 58.5vw;
+    height: 27vh;
+    resize: none;
+    padding-top: 1.5vh;
+    padding-left: 1.5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+
+    border: #000085 solid 1px;
+    border-radius: 5px;
+    display: block;
 }
 
 #politica {
     font-size: 20px;
-    margin-top: 10%;
-text-decoration:underline;
+    margin-top: 5vh;
+    text-decoration:underline;
 }
-button{
-    padding: 10px;
+
+#form-btn{
+    padding: 1.5vw;
     margin-top: 5%;
     background-color: #58fa5a;
     color: #ffffff;
     font-weight: bold;
     border: #ffffff solid 1px;
     border-radius: 5px;
-    width: 60%;
+    width: 60vw;
     margin-bottom: 15%;
 }
 #li{
@@ -199,18 +226,17 @@ button{
 }
 .check{
     display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-left: -0.5vw;
 }
 #subscribeNews{
     margin-left: 0%;
-    width: 25px;
+    width: 2vw;
 }
 #politica{
     font-size: 15px;
-    margin-bottom: 15px;
-}
-
-.teste {
-    width: 40%;
+    margin-bottom: 1vh;
 }
 
 @media screen and (min-width: 1024px) {

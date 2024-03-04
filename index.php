@@ -20,17 +20,19 @@
             <div class="logo-nav">
                 <img id="logo-nav" src="src/general/header-logo.png">
             </div>
-            <ul class="menu">
-                <li><a href="#">Informações</a>
-                    <ul>
-                        <li><a href="sobrenos.php">Sobre nós</a></li>
-                        <li><a href="faleconosco.php">Contato</a></li>
-                        <li><a href="index.php">Geral</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div id="botao">
-                <a href="loginnovo.php"><button id="login">Log in</button></a>
+            <div class="nav-wrap">
+                <ul class="menu">
+                    <li><a href="#">Informações</a>
+                        <ul>
+                            <li><a href="sobrenos.php">Sobre nós</a></li>
+                            <li><a href="faleconosco.php">Contato</a></li>
+                            <li><a href="index.php">Geral</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="botao">
+                    <a href="loginnovo.php"><button id="login">Log in</button></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -97,18 +99,18 @@
             </div>
             <div class="icone2">
                 <a href="faleconosco.php">
-                <span id="icone" class="material-symbols-outlined">
-                    info
-                </span></a>
+                    <span id="icone" class="material-symbols-outlined">
+                        info
+                    </span></a>
                 <p id="baixar">Solicitar Assistência</p>
                 <p id="baixar-info">Precisa de alguma assistência <br>para os produtos Horta Connect? Nossa
                     equipe<br> está a disposição!</p>
             </div>
             <div class="icone3">
                 <a href="sobrenos.php">
-                <span id="icone" class="material-symbols-outlined">
-                    person
-                </span></a>
+                    <span id="icone" class="material-symbols-outlined">
+                        person
+                    </span></a>
                 <p id="baixar">Quem Somos</p>
                 <p id="baixar-info"> Buscamos liderar a transformação digital<br> do agronegócio, por meio
                     de soluções <br>tecnológicas.</p>

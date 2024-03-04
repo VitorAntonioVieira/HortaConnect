@@ -1,5 +1,5 @@
 <?php
-//include 'crud/conexao.php';
+// include 'crud/conexao.php';
 // session_start();
 
 // if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -33,20 +33,21 @@
     <nav>
         <div class="info">
             <div class="logo-nav">
-                <a href="index.php">
-                    <img id="logo-nav" src="src/general/header-logo.png"></a>
+                <img id="logo-nav" src="src/general/header-logo.png">
             </div>
-            <ul class="menu">
-                <li><a href="#">Informações</a>
-                    <ul>
-                        <li><a href="sobrenos.php">Sobre nós</a></li>
-                        <li><a href="faleconosco.php">Contato</a></li>
-                        <li><a href="index.php">Geral</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div id="botao">
-                <a href="loginnovo.php"><button id="login">Log in</button></a>
+            <div class="nav-wrap">
+                <ul class="menu">
+                    <li><a href="#">Informações</a>
+                        <ul>
+                            <li><a href="sobrenos.php">Sobre nós</a></li>
+                            <li><a href="faleconosco.php">Contato</a></li>
+                            <li><a href="index.php">Geral</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="botao">
+                    <a href="loginnovo.php"><button id="login">Log in</button></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -55,7 +56,7 @@
         <figcaption>Assitência</figcaption>
     </figure>
     <div class="content">
-        <div class="info">
+        <div class="infos">
             <p id="problemas">Está com problemas? Entre em contato conosco!</p>
             <p id="problemas2">Para nós, a satisfação do cliente é essencial. Por esta razão garantimos um serviço de
                 assistência técnica eficiente. Aqui você pode resolver seus problemas, e tirar dúvidas sobre os produtos
@@ -76,7 +77,7 @@
                     </div>
                 </div>
             </div>
-            <div class="segunda">
+            <div class="primeiro">
                 <div class="display">
                     <div class="teste">
                         <label for="telefone">Número de Telefone:</label>
@@ -87,18 +88,19 @@
                         <input type="email" placeholder="Email" name="email" required>
                     </div>
                 </div>
-                <div class="mensagem">
-                    <label for="observação">Mensagem:</label>
-                    <input id="mensagem" type="text" placeholder="Mensagem" name="observacao" required>
-                </div>
-                <div>
+                <div class="mensagem-box">
+                    <div class="mensagem">
+                        <label for="observação">Mensagem:</label>
+                        <textarea id="mensagem" type="text" placeholder="Mensagem" name="observacao"
+                            required></textarea>
+                    </div>
                 </div>
                 <p id="politica">Politicas de privacidade</p>
                 <div class="check">
                     <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter" />
                     <label id="li" for="subscribeNews"> Eu li e aceito </label>
                 </div>
-                <button type="submit">Enviar</button>
+                <button id="form-btn" type="submit">Enviar</button>
             </div>
         </form>
     </div>

@@ -22,10 +22,11 @@
             </div>
             <div class="nav-wrap">
                 <ul class="menu">
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="index.php">Página Inicial</a></li>
+                    <li><a href="sobrenos.php">Sobre nós</a></li>
+                    <li><a href="faleconosco.php">Contato</a></li>
                     <li>
-                        <a href="#">Mercado</a>
+                        <a href="mercado.php">Mercado</a>
                         <ul class="submenu">
                             <li><a href="#">Produtos</a></li>
                             <li><a href="#">Soluções Tecnológicas</a></li>

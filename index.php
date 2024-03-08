@@ -22,20 +22,23 @@
             </div>
             <div class="nav-wrap">
                 <ul class="menu">
-                    <li><a href="#">Informações</a>
-                        <ul>
-                            <li><a href="sobrenos.php">Sobre nós</a></li>
-                            <li><a href="faleconosco.php">Contato</a></li>
-                            <li><a href="index.php">Geral</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li>
+                        <a href="#">Mercado</a>
+                        <ul class="submenu">
+                            <li><a href="#">Produtos</a></li>
+                            <li><a href="#">Soluções Tecnológicas</a></li>
                         </ul>
                     </li>
                 </ul>
                 <div id="botao">
-                    <a href="loginnovo.php"><button id="login">Log in</button></a>
+                    <a href="loginnovo.php"><button id="login">Login</button></a>
                 </div>
             </div>
         </div>
     </nav>
+
     <div class="splide__track">
         <ul class="splide__list">
             <li class="splide__slide">

@@ -38,6 +38,7 @@ nav {
 .menu li {
     position: relative;
     float: left;
+    margin-right: 20px; /* Adicionando espaço entre os links */
 }
 
 .menu li a {
@@ -45,34 +46,48 @@ nav {
     text-decoration: none;
     padding: 5px 10px;
     display: block;
+    position: relative;
+    transition: transform 0.3s ease; /* Adicionando transição */
 }
 
 .menu li a:hover {
-    background: #000085;
-    color: #fff;
-    -moz-box-shadow: 0 3px 10px 0 #CCC;
-    -webkit-box-shadow: 0 3px 10px 0 #ccc;
+    color: #6d6d6d;
     text-shadow: 0px 0px 5px #fff;
+    transform: translateY(-5px); /* Faz o link parecer subir */
 }
 
 .menu li ul {
     position: absolute;
-    top: 25px;
+    top: 30px; /* Ajuste a distância do submenu em relação ao item pai conforme necessário */
     left: 0;
     background-color: #fff;
     display: none;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
 }
 
-.menu li:hover ul,
-.menu li.over ul {
+.menu li:hover > ul {
     display: block;
 }
 
 .menu li ul li {
-    border: 1px solid #c0c0c0;
     display: block;
     width: 150px;
 }
+
+.menu li ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+}
+
+.menu li ul li a:hover {
+    background-color: #f0f0f0;
+}
+
 
 #login {
     background-color: #000085;

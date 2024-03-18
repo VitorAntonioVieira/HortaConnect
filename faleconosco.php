@@ -53,7 +53,7 @@
     </nav>
     <figure id="container">
         <img id="foto" src="src/colheita.jpg" />
-        <figcaption>Assitência</figcaption>
+        <figcaption>Assistência</figcaption>
     </figure>
     <div class="content">
         <div class="infos">
@@ -104,12 +104,6 @@
             </div>
             <div>
             </div>
-            <p id="politica">Politicas de privacidade</p>
-            <div class="check">
-                <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter" />
-                <label id="li" for="subscribeNews"> Eu li e aceito </label>
-            </div>
-            <button type="submit">Enviar</button>
     </form>
     <footer>
         <img id="logo-footer" src="./src/general/header-logo.png">

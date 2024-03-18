@@ -98,6 +98,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <button type="submit">Enviar</button>
     </form>
+    <footer>
+        <img id="logo-footer" src="./src/general/header-logo.png">
+        <p>Av. Monsenhor Theodomiro Lobo, 100 - Parque Res. Maria Elmira,<br> Caçapava - SP</p>
+        <br>
+        <p>Email: hortalize.2024@gmail.com</p>
+        <p>Telefone: (12) 3653-1943</p>
+        <br>
+        <p>Siga nossas redes sociais!</p>
+        <ul id="ul">
+          <img id="icone3" src="./src/icone/twitter.png">
+          <img id="icone3" src="./src/icone/instagram.png">
+        </ul>
+    </footer>
 </body>
 
 </html>

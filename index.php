@@ -30,7 +30,7 @@
                 </li>
             </ul>
             <div id="botao">
-                <a href="loginnovo.php"><button id="login">Log in</button></a>
+                <a href="./crud/loginnovo.php"><button id="login">Log in</button></a>
             </div>
         </div>
     </nav>
@@ -43,7 +43,7 @@
     </div>
     <div class="display">
         <div class="primeiro">
-            <img id="teste-fundo" src="imagem-fundo.png" />
+            <img id="teste-fundo" src="./src/general/img-fundo.png" />
             <div id="container">
                 <div class="box-info">
                     <p id="informa">Informações</p>
@@ -85,7 +85,7 @@
             produções, auxiliando no impacto econômico e social, de modo que não haja impacto no meio ambiente. </p>
     </div>
     <div class="img-fundo2">
-        <img id="teste-fundo2" src="img-fundo2.png" />
+        <img id="teste-fundo2" src="./src/general/img-fundo2.png" />
         <div class="imagens2">
             <div class="">
                 <span id="icone" class="material-symbols-outlined">
@@ -115,6 +115,19 @@
             </div>
         </div>
     </div>
+    <footer>
+        <img id="logo-footer" src="./src/general/header-logo.png">
+        <p>Av. Monsenhor Theodomiro Lobo, 100 - Parque Res. Maria Elmira,<br> Caçapava - SP</p>
+        <br>
+        <p>Email: hortalize.2024@gmail.com</p>
+        <p>Telefone: (12) 3653-1943</p>
+        <br>
+        <p>Siga nossas redes sociais!</p>
+        <ul id="ul">
+          <img id="icone3" src="./src/icone/twitter.png">
+          <img id="icone3" src="./src/icone/instagram.png">
+        </ul>
+    </footer>
 </body>
 
 </html>

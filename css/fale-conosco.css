@@ -1,3 +1,17 @@
+@media only screen and (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+    
+    .primeiro, .segunda {
+        flex-direction: column;
+    }
+    
+   
+}
+
+
 :root {
     --m-green: #58fa5a;
     --m-blue: #000085;

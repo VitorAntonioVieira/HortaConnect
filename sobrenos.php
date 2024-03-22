@@ -20,15 +20,13 @@
                     <li><a href="sobrenos.php">Sobre nós</a></li>
                     <li><a href="faleconosco.php">Contato</a></li>
                     <li>
-                        <a href="mercado.php">Mercado</a>
                         <ul class="submenu">
-                            <li><a href="#">Produtos</a></li>
                             <li><a href="#">Soluções Tecnológicas</a></li>
                         </ul>
                     </li>
                 </ul>
                 <div id="botao">
-                    <a href="loginnovo.php"><button id="login">Login</button></a>
+                    <a href="./crud/loginnovo.php"><button id="login">Login</button></a>
                 </div>
             </div>
         </div>

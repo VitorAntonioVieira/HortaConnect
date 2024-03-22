@@ -1,22 +1,22 @@
 <?php
-// include 'crud/conexao.php';
-// session_start();
+include 'crud/conexao.php';
+session_start();
 
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     $nome = $_POST["nome"];
-//     $cidade = $_POST["cidade"];
-//     $telefone = $_POST["telefone"];
-//     $email = $_POST["email"];
-//     $observacao = $_POST["observacao"];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST["nome"];
+    $cidade = $_POST["cidade"];
+    $telefone = $_POST["telefone"];
+    $email = $_POST["email"];
+    $observacao = $_POST["observacao"];
 
-//     $sql = "INSERT INTO faleconosco (nomecompleto, cidade, telefone, email, observacao) VALUES ('$nome', '$cidade', '$telefone', '$email', '$observacao')";
+    $sql = "INSERT INTO faleconosco (nomecompleto, cidade, telefone, email, observacao) VALUES ('$nome', '$cidade', '$telefone', '$email', '$observacao')";
 
-//     if ($conn->query($sql) === TRUE) {
-//         header("Location: agradecimento.php");
-//     } else {
-//         echo "Erro ao inserir notas: " . $conn->error;
-//     }
-// }
+    if ($conn->query($sql) === TRUE) {
+        header("Location: agradecimento.php");
+    } else {
+        echo "Erro ao inserir notas: " . $conn->error;
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +30,7 @@
 </head>
 
 <body>
-<nav>
+    <nav>
         <div class="info">
             <div class="logo-nav">
                 <img id="logo-nav" src="src/general/header-logo.png">
@@ -47,7 +47,7 @@
                     </li>
                 </ul>
                 <div id="botao">
-                    <a href="loginnovo.php"><button id="login">Login</button></a>
+                    <a href="./crud/loginnovo.php"><button id="login">Login</button></a>
                 </div>
             </div>
         </div>
@@ -105,20 +105,20 @@
             </div>
             <div>
             </div>
-    </form>
-    <footer>
-        <img id="logo-footer" src="./src/general/header-logo.png">
-        <p>Av. Monsenhor Theodomiro Lobo, 100 - Parque Res. Maria Elmira,<br> Caçapava - SP</p>
-        <br>
-        <p>Email: hortalize.2024@gmail.com</p>
-        <p>Telefone: (12) 3653-1943</p>
-        <br>
-        <p>Siga nossas redes sociais!</p>
-        <ul id="ul">
-          <img id="icone3" src="./src/icone/twitter.png">
-          <img id="icone3" src="./src/icone/instagram.png">
-        </ul>
-    </footer>
+        </form>
+        <footer>
+            <img id="logo-footer" src="./src/general/header-logo.png">
+            <p>Av. Monsenhor Theodomiro Lobo, 100 - Parque Res. Maria Elmira,<br> Caçapava - SP</p>
+            <br>
+            <p>Email: hortalize.2024@gmail.com</p>
+            <p>Telefone: (12) 3653-1943</p>
+            <br>
+            <p>Siga nossas redes sociais!</p>
+            <ul id="ul">
+                <img id="icone3" src="./src/icone/twitter.png">
+                <img id="icone3" src="./src/icone/instagram.png">
+            </ul>
+        </footer>
 </body>
 
 </html>

@@ -1,128 +1,59 @@
 <?php
-include 'crud/conexao.php';
 session_start();
+include 'conexao.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
-    $sql_consulta = "SELECT * FROM usuarios WHERE email = '$email'";
+
+
+    $sql_consulta = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
     $res = $conn->query($sql_consulta);
+
 
     if ($res->num_rows == 1) {
         $funcionario = $res->fetch_assoc();
-        // $senha_hash = $id['id'];
-
-            $_SESSION['senha'] = $usuario['senha'];
-            $_SESSION['id'] = $usuario['id'];
+        if (password_verify($senha, $usuario['senha'])) {
+            $_SESSION['funcionario_id'] = $usuario['id'];
             $_SESSION['email'] = $usuario['email'];
-            header('Location: mercado.php');
-        } else {
-            echo "Erro ao logar 1";
+            echo "logado";
         }
+        ;
+
+
+    } else {
+        setcookie("login", $login);
+        header("Location:index.php");
+        echo "erro ou logar";
     }
-    session_destroy();
+}
 ?>
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/loginnovo.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    />
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-  </head>
-  <body>
-    <div class="container" id="container">
-      <div class="form-container sign-up-container">
-        <form action="#"><br><br>
-          <h1>Cadastre-se!</h1><br>
+    <link rel="stylesheet" href="../css/loginnovo.css">
+</head>
 
-          <input type="email" placeholder="Email" id="email" />
-          <input type="text" name="nome" placeholder="Nome Completo" id="name" />
-          <input type="password" name="senha" placeholder="Senha" id="senha" />
-          <button>Cadastrar</button>
-          <br /><br /><br /><br />
-
-          <div class="social-container">
-            <a href="https:www.instagram.com/hortaConnect/" class="social" id="ins">
-              <i class="fab fa-instagram"> </i>
-            </a>
-            <a href="https://www.twitter.com" class="social" id="tw">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
+<body>
+    <div class="page">
+        <form action="#" method="POST" class="formLogin">
+            <h1>Login</h1>
+            <p>Digite os seus dados de acesso no campo abaixo.</p>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" autofocus="true" name="email" />
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Digite sua senha" name="senha" />
+            <a href="cadastro.php">Não tem cadastro?</a>
+            <a href="#">Esqueci minha senha</a>
+            <a href="./agradecimento.php"><input type="submit" value="Acessar" class="btn" /></a>
         </form>
-      </div>
-      <div class="form-container sign-in-container">
-        <form action="#" method="POST">
-        <br><br>
-          <h1>Login</h1><br>
-
-          <input type="email" placeholder="Email" id="mail" />
-          <input type="password" placeholder="Senha" id="pass" />
-          <button>Entrar</button>
-          <a class="esqueceur" href="redefinirsenha.php">Esqueci minha senha</a>
-          <br /><br /><br /><br /><br /><br />
-
-          <div class="social-container">
-            <a href="https://www.instagram.com" class="social" id="ins">
-          <h1>Login</h1>
-
-          <input type="email" name="email" placeholder="Email" id="mail" />
-          <input type="password" name="senha"placeholder="Senha" id="pass" />
-          <input type="submit" value="Entrar" id="botaologin">
-          <br /><br /><br /><br /><br /><br />
-
-          <div class="social-container">
-            <a href="https:www.instagram.com/hortaConnect/" class="social" id="ins">
-              <i class="fab fa-instagram"> </i>
-            </a>
-            <a href="https://www.twitter.com" class="social" id="tw">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </div>
-         <a href="index.php"> <p id="pagina-principal">Voltar para pagina principal</p></a>
-        </form>
-      </div>
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-          <img src="src/general/header-logo.png" class="logologin" alt="" srcset="">
-            <p>
-             "Transformando sementes de ideias, em colheitas de sucesso”
-            </p>
-            <br />
-            <p style="color: rgb(0, 68, 255)">Já tem uma conta?</p>
-            <button class="press" id="signIn">Faça Login!</button>
-          </div>
-          <div class="overlay-panel overlay-right">
-          <img src="src/general/header-logo.png" class="logologin" alt="" srcset="">
-            <p>"Transformando sementes de ideias, em colheitas de sucesso”</p>
-            <br />
-            <p style="color: rgb(0, 68, 255)">Não tem uma conta?</p>
-            <button class="press" id="signUp" style="color: rgb(57, 49, 5)">
-              Cadastre-se!
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
-    <script type="text/javascript">
-      const signUpButton = document.getElementById("signUp");
-      const signInButton = document.getElementById("signIn");
-      const container = document.getElementById("container");
 
-      signUpButton.addEventListener("click", () => {
-        container.classList.add("right-panel-active");
-      });
+</body>
 
-      signInButton.addEventListener("click", () => {
-        container.classList.remove("right-panel-active");
-      });
-    </script>
-  </body>
 </html>

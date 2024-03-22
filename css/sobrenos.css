@@ -131,7 +131,7 @@ nav {
 }
 
 #imagem-exemplo {
-    width: 40%;
+    width: 30%;
     margin-top: 5%;
     margin-right: 5%;
     height: 40%;
@@ -139,6 +139,7 @@ nav {
 
 .container {
     display: flex;
+    margin-top: 5%;
 }
 
 #info {

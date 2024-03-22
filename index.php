@@ -32,7 +32,7 @@
                     </li>
                 </ul>
                 <div id="botao">
-                    <a href="loginnovo.php"><button id="login">Login</button></a>
+                    <a href="./crud/loginnovo.php"><button id="login">Login</button></a>
                 </div>
             </div>
         </div>

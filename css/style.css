@@ -180,7 +180,22 @@ nav {
 .guia {
     font-size: 15px;
 }
-
+textarea {
+    width: 300px;
+    resize: none;
+    border: none;
+    padding: 8px;
+    background-color: #e9e8e8;
+    color: rgb(0, 0, 0);
+    outline: none;
+    font-size: 15px;
+    text-align: justify;
+    font-family: arial, helvetica, sans-serif;
+  }
+  
+  textarea:focus {
+    border: 1px solid #000000;
+  }
 /* .box-info{
     font-size: 25px;
     color: black;

@@ -16,14 +16,42 @@
 body {
     font-family: arial, helvetica, sans-serif;
     font-size: 12px;
+    background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 93%, rgba(106,252,69,1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 nav {
     position: fixed;
     width: 100%;
-    background: white;
+    background-color: transparent;
     top: 0;
     z-index: 1000;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo-nav {
+    width: 100%;
+}
+
+.logo-nav {
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 9.5vw;
+}
+
+.nav-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 2vw;
 }
 
 .menu {
@@ -99,27 +127,25 @@ nav {
     height: 5vh;
 }
 
-.info {
+section.waves {
+    width: 100vw;
+    height: 100vh;
+}
+
+.content {
+    display: grid;
+    grid-row: auto;
+}
+
+.content.block {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-#logo-nav {
-    width: 100%;
-}
-
-.logo-nav {
-    margin-top: 1%;
-    margin-left: 3%;
-    width: 9.5vw;
-}
-
-.nav-wrap {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-right: 2vw;
+.logo {
+    color: var();
 }
 
 #guia-agricultor {
@@ -205,11 +231,11 @@ nav {
     background-color: #fbfbfb;
     width: 25%;
     text-align: center;
-    top: 80%;
+    /* top: 80%; */
     /* Move a div para o topo */
-    left: 80%;
+    /* left: 80%; */
     /* Move a div para o centro horizontal */
-    transform: translate(0%, -50%);
+    /* transform: translate(0%, -50%); */
     overflow: hidden;
     padding-bottom: 2%;
 }

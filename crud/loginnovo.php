@@ -1,26 +1,26 @@
 <?php
-// include 'crud/conexao.php';
-// session_start();
+include 'conexao.php';
+session_start();
 
-// if ($_SERVER["REQUEST_METHOD"] === "POST") {
-//     $email = $_POST['email'];
-//     $senha = $_POST['senha'];
-//     $sql_consulta = "SELECT * FROM usuarios WHERE email = '$email'";
-//     $res = $conn->query($sql_consulta);
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $sql_consulta = "SELECT * FROM usuarios WHERE email = '$email'";
+    $res = $conn->query($sql_consulta);
 
-//     if ($res->num_rows == 1) {
-//         $funcionario = $res->fetch_assoc();
-//         // $senha_hash = $id['id'];
+    if ($res->num_rows == 1) {
+        $usuario = $res->fetch_assoc();
+        // $senha_hash = $id['id'];
 
-//             $_SESSION['senha'] = $usuario['senha'];
-//             $_SESSION['id'] = $usuario['id'];
-//             $_SESSION['email'] = $usuario['email'];
-//             header('Location: mercado.php');
-//         } else {
-//             echo "Erro ao logar 1";
-//         }
-//     }
-//     session_destroy();
+            $_SESSION['senha'] = $usuario['senha'];
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['email'] = $usuario['email'];
+            header('Location: mercado.php');
+        } else {
+            echo "Erro ao logar 1";
+        }
+    }
+    session_destroy();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +28,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/loginnovo.css" />
+    <link rel="stylesheet" href="css/loginnovo.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"

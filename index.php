@@ -83,23 +83,20 @@
                             </p>
                         </div>
                     </div>
-                    <div class="box-info">
-                        <p id="informa">Posso ajudar?</p>
-                        <div div="guia">
-                            <p id="selecionar">Selecione as informações</p>
-                            <form>
-                                <input type="text" placeholder="Tipo de solo" name="solo" />
-                                <input type="text" placeholder="Cultura" name="cultura" />
-                                <input type="text" placeholder="Pragas" name="pragas" />
-                            </form>
-                            <button class="botao-form transitionScale" type="submit">Pesquisar</button>
-                        </div>
+                 <div class="box-info">
+                    <script src="./js/chat.js" defer></script>
+                    <p id="informa">Posso ajudar?</p>
+                    <div id="guia">
+                        <p id="selecionar">Tire suas dúvidas!</p><br>
+                        <textarea id="inputQuestion" placeholder="Pergunte algo aqui!" style="height: 40px;"></textarea>
+                        <textarea id="result" rows="10" disabled placeholder="Resposta da sua pergunta"
+                            style="height: 20%;"></textarea>
+                            <button id="searchButton" class="botao-form transitionScale" type="button">Pesquisar</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <div class="info-text">
         <h2>Bem vindos ao <span id="cor">HORTA CONNECT</span></h2>
         <p id="informacao-horta">Somos um projeto criado para ajudar produtores rurais, com o objetivo de maximizar o

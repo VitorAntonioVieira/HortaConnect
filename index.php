@@ -1,3 +1,21 @@
+<?php
+include 'crud/conexao.php';
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $observacao = $_POST["mensagem"];
+
+    $sql = "INSERT INTO faleconosco (nomecompleto, email, observacao) VALUES ('$nome', '$email', '$observacao')";
+
+    if ($conn->query($sql) === TRUE) {
+        header("Location: index.php");
+    } else {
+        echo "Erro ao inserir notas: " . $conn->error;
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -55,7 +73,7 @@
                 <ul class="menu">
                     <li><a href="index.php">Página Inicial</a></li>
                     <li><a href="sobrenos.php">Sobre nós</a></li>
-                    <li><a href="faleconosco.php">Contato</a></li>
+                    <li><a href="#footer-form">Contato</a></li>
                     <li>
                         <ul class="submenu">
                             <li><a href="#">Soluções Tecnológicas</a></li>
@@ -234,7 +252,7 @@
                         </div>
                         <div class="footer-box">
                             <h3 class="box-title" id="footer-form">Entre em contato</h3>
-                            <form action="/enviar" method="post"
+                            <form action="#" method="POST"
                                 style="display:flex; justify-content:center; flex-direction:column; align-items:center; width:100%">
                                 <input class="form-input" type="text" id="nome" name="nome" placeholder="Nome" required>
                                 <input class="form-input" type="email" id="email" name="email" placeholder="Email"

@@ -321,19 +321,21 @@
   }
   
   .headline-dark {
-  color: #000085;
+  color: #376633;
   letter-spacing: 0.7rem;
   margin-right: 0.7rem;
   }
   
   #hr {
-  size: 10px;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  background-color: #ffc222;
+    height: 2px; /* Reduzindo a espessura da linha para 2 pixels */
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #ffc222; /* Cor amarela */
   }
+  
+
   
   .global-headline .sub-headline {
   letter-spacing: -1px;

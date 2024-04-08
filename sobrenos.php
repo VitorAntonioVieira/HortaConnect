@@ -71,7 +71,7 @@
           <!-- <a href="#" class="btn body-btn">About Us</a> -->
         </div>
         <div class="restaurant-info-img animate-right">
-          <img src="src/general/logo-verde.png" alt="" />
+          <img src="src/general/logo-preto.png" alt="" />
         </div>
       </div>
     </div>
@@ -85,7 +85,7 @@
 
         <div class="animate-bottom text-center">
           <hr id="hr2" />
-          <h1 class="headline" style="color: #000085;">HORTA CONNECT</h1>
+          <h1 class="headline" style="color: #376633;">HORTA CONNECT</h1>
           <hr id="hr2" />
         </div>
       </div>
@@ -172,7 +172,7 @@
             <span class="first-letter">T</span>he Perfect
           </h2> -->
         </div>
-          <h1 class="headline" style="color: #000085;">Colaboradores</h1>
+          <h1 class="headline" style="color: #376633;">Colaboradores</h1>
           <div class="integrantes">
             <div class="animate-bottom">
             <div class="img-integrantes">

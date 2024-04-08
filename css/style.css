@@ -45,7 +45,7 @@
 }
 
 body {
-    font-family: arial, helvetica, sans-serif;
+    font-family: var(--s-font);
     font-size: 12px;
 
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 90%, rgba(106, 252, 69, 1) 100%);
@@ -65,6 +65,10 @@ body {
 
 .hidden, .hidden-v {
     visibility: hidden;
+}
+
+.navbar.navbar.fixed-top {
+    display: none;
 }
 
 nav.header {
@@ -208,7 +212,11 @@ section.ondas-box {
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 5%;
-    padding-top: 20vh;
+    padding-top: 15vh;
+}
+
+.content:nth-child(1) {
+    padding-top: 22vh;
 }
 
 .content-t-grid {
@@ -275,7 +283,7 @@ section.ondas-box {
 }
 
 .panel#panel-img {
-    width: 20vw !important;
+    width: 20vw;
     animation: logoAnimado 2s ease infinite alternate;
 }
 
@@ -316,6 +324,38 @@ section.ondas-box {
     50% {
         opacity: 0;
     }
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.floating {
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+
+    background-color: var(--s-green);
+}
+
+#panel-img1 {
+    animation: downUp 1s linear infinite alternate;
+}
+
+#panel-img2 {
+    position: relative;
+    left: 26vw;
+
+    animation: upDown 3s linear infinite alternate;
+}
+
+#panel-img3 {
+    position: relative;
+    left: 8vw;
+
+    animation: downUp 2s linear infinite alternate;
 }
 
 .onda {
@@ -370,6 +410,11 @@ section.ondas-box {
     /* Adicionado para posicionar os elementos filhos relativamente */
 }
 
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .box-info {
     /* position: absolute; Ajustado para posicionamento absoluto */
     font-size: 25px;
@@ -404,19 +449,18 @@ section.ondas-box {
     width: 80%;
 }
 
-.guia {
-    font-size: 15px;
-}
-
-#guia-agricultor {
+.box-index {
     margin-top: 5%;
-    text-align: left;
     margin-left: 5%;
+    padding-top: 2vh;
+
+    text-align: left;
     font-size: 15px;
-    color: #000085;
+    font-weight: 700;
+    color: var(--m-yellow);
 }
 
-#descricao {
+.box-desc {
     margin-top: 3%;
     text-align: justify;
     margin-right: 6%;
@@ -424,10 +468,7 @@ section.ondas-box {
     font-size: 15px;
 }
 
-#container {
-    display: flex;
-    justify-content: space-evenly;
-}
+
 
 textarea {
     width: 300px;
@@ -459,6 +500,7 @@ input {
 }
 
 .botao-form {
+    width: 82%;
     padding: 10px;
     margin-top: 5%;
     background-color: transparent;
@@ -481,6 +523,25 @@ input {
     border-color: transparent;
 
     scale: 1.1;
+}
+
+.m-height {
+    margin-top: -15vh;
+}
+
+.mockup-container {
+    padding-top: 5vh;
+    padding-bottom: 15vh
+}
+
+#mockup-content {
+    padding-top: 10vh;
+}
+
+#mockup-badges {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #mockup {
@@ -555,6 +616,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 
     padding: 10vh 0 3vh 0;
     margin: 0 1vw;
@@ -639,91 +701,237 @@ footer {
     width: 100%;
 
     height: 2px;
-    margin-bottom: 10vh;
+    margin-bottom: 6vh;
 }
 
-/* h2 {
-    text-align: center;
+@media screen and (max-width: 768px) {
+    .navbar.navbar.fixed-top {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .content {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+
+        padding-top: 8vh;
+    }
+
+    .content-t-grid {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        padding-top: 8vh;
+    }
+
+    .content-box:hover {
+        background-color: var(--s-green);
+        color: var(--white) !important;
+
+        border-radius: 20px;
+    }
+
+    .content-box:hover .box-title {
+        color: var(--white) !important;
+    }
+
+    .content-title {
+        font-size: 40px;
+    }
+
+    .content-text {
+        font-size: 20px;
+    }
+
+    .content-video {
+        width: 100%;
+        height: 215px;
+    }
+
+    .content-icon {
+        font-size: 160px !important;
+    }
+
+    section.ondas-box {
+        height: 88vh;
+    }
+
+    .ondas-box>.content>.content-block:nth-child(1) {
+        padding-top: 4vh;
+    }
+
+    .ondas-box>.content:nth-child(1) {
+        padding-top: 8vh;
+    }
+
+    .ondas-box>.content>.content-block:nth-child(2) {
+        display: none;
+    }
+
+    .panel {
+        width: 100%;
+    }
+
+    .panel#panel-img {
+        width: 240px;
+    }
+
+    .panel#panel-title {
+        font-size: 50px;
+    }
+
+    .panel#panel-text {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .display {
+        padding-top: 10vh;
+        padding-bottom: 12vh;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 40px;
+    }
+
+    .box-info {
+        width: 80%;
+        height: 490px;
+        padding-bottom: 50px;
+    }
+
+    .box-title {
+        font-size: 40px;
+    }
+
+    .box-sub {
+        font-size: 20px;
+    }
+
+    .box-text {
+        font-size: 25px;
+    }
+
+    .box-index {
+        font-size: 20px;
+    }
+
+    .box-desc {
+        font-size: 18px;
+    }
+
+    .botao-form {
+        margin-top: 20px;
+        height: 60px;
+
+        font-size: 20px;
+    }
+
+    .botao-form.transitionScale:active {
+        background-color: var(--m-yellow);
+        color: var(--white);
+        border-color: transparent;
+
+        scale: 1.1;
+    }
+
+    .m-height {
+        margin-top: 0;
+    }
+
+    .mockup-container {
+        padding-top: 0;
+    }
+
+    #mockup-content {
+        padding-top: 0 !important;
+    }
+
+    #mockup-badges {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0;
+    }
+
+    #mockup {
+        width: 200%;
+        height: 450px;
+    }
+
+    #app-logo {
+        top: 40vh;
+        left: 55vw;
+
+        width: 140px;
+    }
+
+    .badge {
+        width: 180px;
+        height: 60px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footer-content {
+        padding-top: 3vh;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto 1fr;
+    }
+
+    .footer-box {
+        width: 100%;
+        height: auto;
+
+        padding: 0;
+    }
+
+    .footer-box:nth-child(1) {
+        height: 100px;
+    }
+
+    .footer-box:nth-child(4) {
+        align-items: center;
+    }
+
+    .footer-wrap {
+        justify-content: unset;
+    }
+
+    #footer-logo {
+        width: 90%;
+    }
+
+    .wrap-text {
+        width: auto;
+    }
+
+    #footer-form {
+        color: var(--white);
+
+        padding-top: 30px;
+    }
+
+    .footer-element:nth-child(2) {
+        padding-top: -50px;
+    }
+
+    @keyframes ondaAnimada {
+        0% {
+            transform: translateY(2px);
+        }
+    
+        100% {
+            transform: translateY(12px);
+        }
+    }
 }
-
-#cor {
-    color: #000085;
-}
-
-#informacao-horta {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 2%;
-}
-
-#img-fundo2 {
-    position: relative;
-}
-
-#teste-fundo2 {
-    width: 100%;
-    height: 590px;
-}
-
-.imagens2 {
-    margin-left: 10%;
-    margin-top: -15%;
-    display: flex;
-    color: #fff;
-}
-
-#icone {
-    font-size: 120px;
-    color: #58fa5a;
-}
-
-#baixar {
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 1%;
-}
-
-#baixar-info {
-    align-items: center;
-    font-size: 15px;
-    justify-content: center;
-    margin-left: 0px;
-    margin-top: 2%;
-    font-family: sans-serif;
-}
-
-.icone2 {
-    margin-left: 20%;
-}
-
-.icone3 {
-    margin-left: 20%;
-}
-
-footer {
-    background-color: #848484;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    margin-top: 50px;
-
-}
-
-#footer-id {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#logo-footer {
-    width: 10%;
-}
-
-#icone3 {
-    width: 2%;
-    margin-top: 1%;
-} */

@@ -4,13 +4,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $nomeCompleto = $_POST['nome'];
     $email = $_POST['email'];
-    $senha = $_POST['senha'];
 
     $hashed_password = password_hash($_POST['senha'], PASSWORD_DEFAULT);
-    $sql = "INSERT INTO usuarios (nomeCompleto, email, senha) VALUES (?,?,?)";
+    $sql = "INSERT INTO usuarios (email, nomeCompleto, senha) VALUES (?,?,?)";
     $stmt = mysqli_prepare($conn, $sql);
-    $stmt->bind_param("sss", $nomeCompleto, $email, $hashed_password);
+    $stmt->bind_param("sss", $email, $nomeCompleto, $hashed_password);
     $stmt->execute();
+    header("Location: ../loginnovo.php");
 }
 $conn->close();
 ?>

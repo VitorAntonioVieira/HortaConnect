@@ -64,6 +64,7 @@
   
   p {
   font-size: 1.6rem;
+  margin: 5px;
   }
   
   .container {
@@ -332,7 +333,7 @@
     margin-left: 10%;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color: #ffc222; /* Cor amarela */
+    background-color: #000085; /* Cor amarela */
   }
   
 
@@ -385,31 +386,35 @@
   
   /* Tasteful Recipes */
   .tasteful-recipes {
-  background: url("src/fundo.jpg") center no-repeat;
-  background-size: cover;
+    background: url("src/fundo.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
   }
-
-  #hr2{
+  
+  #hr2 {
     size: 10px;
-  width: 80%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  background-color: #ffc222;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #000085;
   }
   
   .between {
-  min-height: 65vh;
-  display: flex;
-  align-items: center;
-  }
-  .text-center {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* Para garantir que ocupe toda a altura da seção */
+    min-height: 65vh;
   }
   
+  .text-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Para garantir que ocupe toda a altura da seção */
+  }
+  
+  
+
   
   /* Discover Our Menu */
   .image-group {
@@ -637,6 +642,35 @@
       width: 30%; /* Define a largura das imagens para 40% da largura do contêiner */
   }
   }
+
+  
+@media (max-width: 768px) {
+  .headline {
+    font-size: 3.5rem; /* Reduzir o tamanho da fonte */
+    letter-spacing: 0.7rem; /* Ajustar o espaçamento entre letras */
+    margin-right: -0.2rem; /* Ajustar margem direita */
+  }
+  
+  .headline-dark {
+    font-size: 3rem;
+    letter-spacing: 0.6rem;
+    margin-right: 0.3rem; /* Ajustar margem direita */
+  }
+}
+
+@media (max-width: 576px) {
+  .headline {
+    font-size: 2.8rem; /* Reduzir ainda mais o tamanho da fonte */
+    letter-spacing: 0.6rem; /* Ajustar o espaçamento entre letras */
+    margin-right: -0.1rem; /* Ajustar margem direita */
+  }
+  
+  .headline-dark {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    margin-right: 0.2rem; /* Ajustar margem direita */
+  }
+}
   
   /* Animations */
   @keyframes fadeUp {

@@ -1,0 +1,274 @@
+:root {
+    --m-green: #58fa5a;
+    --m-blue: #000085;
+    --black: #181818;
+    --white: #fafafa;
+    --s-green: #376633;
+    --y-white: #e5dca4;
+    --m-yellow: #ffc222;
+    --m-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --s-font: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Header Style  */
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    float: left;
+    display: flex;
+    font-family: sans-serif;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    /* Adicionando espaço entre os links */
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    position: relative;
+    transition: transform 0.3s ease;
+    /* Adicionando transição */
+}
+
+.menu li a:hover {
+    color: #6d6d6d;
+    text-shadow: 0px 0px 5px #fff;
+    transform: translateY(-5px);
+    /* Faz o link parecer subir */
+}
+
+.menu li ul {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.menu li:hover>ul {
+    display: block;
+}
+
+.menu li ul li {
+    display: block;
+    width: 150px;
+}
+
+.menu li ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+}
+
+.menu li ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+#login {
+    background-color: #000085;
+    font-size: 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 0px;
+    width: 10vh;
+    height: 5vh;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo-nav {
+    width: 100%;
+}
+
+.logo-nav {
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 9.5vw;
+}
+
+.nav-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 2vw;
+}
+
+/* DIV conteiner */
+
+#img-sensor {
+    width: 15%;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 40%;
+
+}
+
+h1 {
+    font-family: sans-serif;
+    margin-top: 15%;
+    text-align: center;
+    color: #3f753a
+}
+
+.solução1 {
+    border: #333 solid 1px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+h3 {
+    font-family: sans-serif;
+    color: #3f753a;
+    text-align: center;
+}
+
+#informação {
+    text-align: center;
+}
+
+.container {
+    align-items: center;
+}
+
+.solução2 {
+    border: #333 solid 1px;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+.ume{
+    display: flex;
+}
+.botao-form.transitionScale:active {
+    background-color: var(--m-yellow);
+    color: var(--white);
+}
+
+.botao-form.transitionScale:hover {
+    background-color: var(--m-yellow);
+    color: var(--white);
+    border-color: transparent;
+    transition: 1;
+}
+
+.botao-form {
+    width: 82%;
+    padding: 10px;
+    margin-top: 5%;
+    background-color: transparent;
+    color: var(--m-yellow);
+    font-weight: bold;
+    font-family: var(--s-font);
+    font-size: 15px;
+    border: var(--m-yellow) solid 2px;
+    border-radius: 5px;
+}
+
+/* modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 4% auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#img-modal {
+    width: 50%;
+    margin-left: 25%;
+}
+
+button {
+    margin-left: 9%;
+}
+
+h4 {
+    text-align: center;
+    justify-content: center;
+}
+
+#alinhar {
+    justify-content: center;
+}
+
+p {
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.solução3 {
+    align-items: center;
+    border: #333 solid 1px;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}

@@ -192,8 +192,8 @@ c36 -99 140 -283 213 -381 98 -131 250 -277 372 -358 95 -64 258 -151 281
         </div>
       </div>
     </div>
-    <<<<<<< HEAD </section>
-      <!-- Culinary Delight End -->
+  </section>
+  <!-- Culinary Delight End -->
 
 
       <hr id="hr" />
@@ -310,6 +310,7 @@ c36 -99 140 -283 213 -381 98 -131 250 -277 372 -358 95 -64 258 -151 281
         </div>
       </footer>
       <script src="./js/main.js"></script>
+  <script src="js/sobrenos.js"></script>
 </body>
 
 </html>

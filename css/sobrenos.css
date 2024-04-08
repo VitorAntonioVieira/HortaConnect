@@ -63,6 +63,10 @@ p {
 }
 
 .container {
+  margin: 5px;
+  }
+  
+  .container {
   width: 100%;
   max-width: 122.5rem;
 }
@@ -370,7 +374,17 @@ nav.scrolled {
   color: #376633;
   letter-spacing: 0.7rem;
   margin-right: 0.7rem;
-}
+  }
+  
+  #hr {
+    height: 2px; /* Reduzindo a espessura da linha para 2 pixels */
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #000085; /* Cor amarela */
+  }
+  
 
 #hr {
   height: 2px;
@@ -783,7 +797,7 @@ footer {
     /* Define a largura das imagens para 40% da largura do contêiner */
   }
 
-  f {
+  footer {
     height: auto;
   }
 
@@ -835,7 +849,37 @@ footer {
 }
 
 /* Animations */
-@keyframes fadeUp {
+  
+@media (max-width: 768px) {
+  .headline {
+    font-size: 3.5rem; /* Reduzir o tamanho da fonte */
+    letter-spacing: 0.7rem; /* Ajustar o espaçamento entre letras */
+    margin-right: -0.2rem; /* Ajustar margem direita */
+  }
+  
+  .headline-dark {
+    font-size: 3rem;
+    letter-spacing: 0.6rem;
+    margin-right: 0.3rem; /* Ajustar margem direita */
+  }
+}
+
+@media (max-width: 576px) {
+  .headline {
+    font-size: 2.8rem; /* Reduzir ainda mais o tamanho da fonte */
+    letter-spacing: 0.6rem; /* Ajustar o espaçamento entre letras */
+    margin-right: -0.1rem; /* Ajustar margem direita */
+  }
+  
+  .headline-dark {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    margin-right: 0.2rem; /* Ajustar margem direita */
+  }
+}
+  
+  /* Animations */
+  @keyframes fadeUp {
   0% {
     transform: translateY(4rem);
   }

@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/sobrenos.css" />
+    <link rel="shortcut icon" type="imagex/png" href="./src/icone/logo-icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Horta Connect</title>
 </head>
 
 <body>
-<nav>
+    <nav>
         <div class="info">
             <div class="logo-nav">
                 <img id="logo-nav" src="src/general/header-logo.png">
@@ -26,7 +31,7 @@
                     </li>
                 </ul>
                 <div id="botao">
-                    <a href="./crud/loginnovo.php"><button id="login">Login</button></a>
+                    <a href="./loginnovo.php"><button id="login">Login</button></a>
                 </div>
             </div>
         </div>
@@ -91,8 +96,8 @@
         <br>
         <p>Siga nossas redes sociais!</p>
         <ul id="ul">
-          <img id="icone" src="./src/icone/twitter.png">
-          <img id="icone" src="./src/icone/instagram.png">
+            <img id="icone" src="./src/icone/twitter.png">
+            <img id="icone" src="./src/icone/instagram.png">
         </ul>
     </footer>
 </body>

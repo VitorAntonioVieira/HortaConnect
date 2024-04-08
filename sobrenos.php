@@ -158,7 +158,6 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
   </section>
   <!-- Culinary Delight End -->
 
@@ -232,21 +231,6 @@
 </footer>
 
   <script src="js/sobrenos.js"></script>
-=======
-    <footer>
-        <img id="logo-footer" src="./src/general/header-logo.png">
-        <p>Av. Monsenhor Theodomiro Lobo, 100 - Parque Res. Maria Elmira,<br> Caçapava - SP</p>
-        <br>
-        <p>Email: hortalize.2024@gmail.com</p>
-        <p>Telefone: (12) 3653-1943</p>
-        <br>
-        <p>Siga nossas redes sociais!</p>
-        <ul id="ul">
-            <img id="icone" src="./src/icone/twitter.png">
-            <img id="icone" src="./src/icone/instagram.png">
-        </ul>
-    </footer>
->>>>>>> vitor_css_test
 </body>
 
 </html>

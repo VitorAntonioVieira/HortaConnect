@@ -144,7 +144,8 @@ h1 {
     font-family: sans-serif;
     margin-top: 15%;
     text-align: center;
-    color: #3f753a
+    color: #3f753a;
+    font-size:55px;
 }
 
 .solução1 {
@@ -162,6 +163,7 @@ h3 {
 
 #informação {
     text-align: center;
+    
 }
 
 .container {

@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="shortcut icon" href="../the-rosa/images/favicon.ico" type="image/x-icon">
-  <title>Sobre nós</title>
-  <!--Font awesome CDN-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-  <!--Scroll reveal CDN-->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <link rel="stylesheet" href="css/sobrenos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/sobrenos.css" />
+    <link rel="shortcut icon" type="imagex/png" href="./src/icone/logo-icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Horta Connect</title>
 </head>
 
 <body>
-  <!-- Header Start -->
-  <nav class="header">
-    <div class="info">
-      <div class="logo-nav-box">
-        <img id="logo-nav" src="./src/general/header-logo.svg">
-      </div>
-      <div class="nav-wrap">
-        <ul class="menu">
-          <li><a href="index.php">Página Inicial</a></li>
-          <li><a href="sobrenos.php">Sobre nós</a></li>
-          <li><a href="faleconosco.php">Contato</a></li>
-          <li>
-            <ul class="submenu">
-              <li><a href="#">Soluções Tecnológicas</a></li>
-            </ul>
-          </li>
-        </ul>
-        <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>
-      </div>
-    </div>
-  </nav>
+    <nav class="navbar fixed-top" style="display:none">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src=".src/general/header-logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src=".src/general/header-logo.svg"
+                            alt=""></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Página inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobrenos.php">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./solucoes.php">Soluções tecnológicas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="header">
+        <div class="info">
+            <div class="logo-nav-box">
+                <img id="logo-nav" src="src/general/header-logo.svg">
+            </div>
+            <div class="nav-wrap">
+                <ul class="menu">
+                    <li><a href="index.php">Página Inicial</a></li>
+                    <li><a href="sobrenos.php">Sobre nós</a></li>
+                    <li><a href="#f-form">Contato</a></li>
+                    <li>
+                        <ul class="submenu">
+                            <li><a href="#">Soluções Tecnológicas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>
+            </div>
+        </div>
+    </nav>
   <!-- Header End -->
 
   <!-- Discover Our Story --> <br><br><br><br><br><br>

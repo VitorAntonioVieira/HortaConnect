@@ -6,96 +6,66 @@
   --s-green: #376633;
   --y-white: #e5dca4;
   --m-yellow: #ffc222;
-  --main-font-color-dark: #252525;
-  --secondary-font-color: #c59d5f;
-  --body-font-color: #515151;
   --m-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --s-font: 'Montserrat', sans-serif;
+}
+
+@keyframes appear {
+  from {
+      translate: translateY(-50%);
+      opacity: 0;
+  }
+
+  to {
+      translate: 0;
+      opacity: 0;
+  }
+
+  /*Como usar
+  animation: appear 1ms ease-in-out;
+  animation-timeline: view;
+  animation-range: cover 0% cover 40%;
+  */
+}
+
+@keyframes gradient {
+  from {
+      background-position-x: 0%;
+  }
+
+  to {
+      background-position-x: 100%;
+  }
 }
 
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--s-font);
   font-size: 12px;
+
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 90%, rgba(106, 252, 69, 1) 100%);
+  background-size: 100% 100% cover;
+  background-position: center;
+
+  animation: gradient 5s linear infinite alternate;
 }
 
-/* @import url("https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap"); */
-
-/*Global styles*/
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.center {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center;
 }
 
-html {
-  font-size: 10px;
-  color: var(--body-font-color);
-  scroll-behavior: smooth;
+.hidden, .hidden-v {
+  visibility: hidden;
 }
-
-body {
-  overflow-x: hidden;
-}
-
-section {
-  padding: 3.9rem 0;
-  overflow: hidden;
-}
-
-img {
-  width: 100%;
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  font-size: 1.6rem;
-}
-
-.container {
-  margin: 5px;
-  }
-  
-  .container {
-  width: 100%;
-  max-width: 122.5rem;
-}
-
-/* Header Style  */
-header {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
-}
-
-nav {
-  position: fixed;
-  width: 100%;
-  background: white;
-  top: 0;
-  z-index: 1000;
-}
-
-input {
-  margin-top: 25px;
-  width: 80%;
-  padding: 10px;
-}
-
-/* Header style */
 
 .navbar.navbar.fixed-top {
   display: none;
@@ -264,7 +234,7 @@ nav.scrolled {
 .headline {
   color: #fff;
   font-size: 3.7rem;
-  font-family: var(--main-font);
+  font-family: var(--m-font);
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 0.5rem;

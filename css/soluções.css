@@ -142,39 +142,35 @@ nav {
 
 h1 {
     font-family: sans-serif;
-    margin-top: 15%;
+    margin-top: 150px;
     text-align: center;
     color: #3f753a;
     font-size:55px;
 }
 
-.solução1 {
-    border: #333 solid 1px;
-    border-radius: 15px;
-    padding: 5px;
-    margin-left: 15px;
+.subtitulo{
+    text-align: center;
+    color: #376633;
+    font-size:40px;
 }
-
+#hr2 {
+    size: 10px;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 30px;
+    background-color: #0000;
+  }
+  
 h3 {
     font-family: sans-serif;
     color: #3f753a;
     text-align: center;
 }
 
-#informação {
-    text-align: center;
-    
-}
-
 .container {
     align-items: center;
 }
 
-.solução2 {
-    border: #333 solid 1px;
-    border-radius: 15px;
-    margin-left: 15px;
-}
 .ume{
     display: flex;
 }
@@ -190,8 +186,16 @@ h3 {
     transition: 1;
 }
 
+/* CSS atualizado */
+#informação {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Adicionado para dispor verticalmente o texto e o botão */
+}
+
 .botao-form {
-    width: 82%;
+    width: 50%;
     padding: 10px;
     margin-top: 5%;
     background-color: transparent;
@@ -201,7 +205,10 @@ h3 {
     font-size: 15px;
     border: var(--m-yellow) solid 2px;
     border-radius: 5px;
+    margin-top: 10px; /* Adicionado para criar espaço entre o texto e o botão */
+    margin-bottom: 10px;
 }
+
 
 /* modal */
 
@@ -215,6 +222,7 @@ h3 {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
     overflow: auto;
+    margin-top: 100px;
 }
 
 .modal-content {
@@ -246,9 +254,7 @@ h3 {
     margin-left: 25%;
 }
 
-button {
-    margin-left: 9%;
-}
+
 
 h4 {
     text-align: center;
@@ -257,6 +263,8 @@ h4 {
 
 #alinhar {
     justify-content: center;
+    text-align: justify;
+    
 }
 
 p {
@@ -267,10 +275,11 @@ h2 {
     text-align: center;
 }
 
-.solução3 {
+.solução {
     align-items: center;
     border: #333 solid 1px;
     border-radius: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-inline: 60px;
+
+    padding: 5px; /* Ajuste o espaçamento interno aqui */
 }

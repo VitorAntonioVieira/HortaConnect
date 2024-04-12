@@ -40,15 +40,17 @@
             </nav>
         </div>
     </header>
-    <h1>Irrigação Inteligente</h1>
+    <h1>Soluções Tecnológicas</h1>
+    <p class="subtitulo">Irrigação Inteligente</p>
+    <hr id="hr2" />
     <div class="container">
         <div class="ume">
-            <div class="solução1">
+            <div class="solução">
                 <div class="img-sensor">
                     <img id="img-sensor" src="./src/general/sensor.jpg">
                 </div>
                 <div id="informação">
-                    <h3>Basico</h3>
+                    <h3>Básico</h3>
                     <p>R$ 7.500,00</p>
                     <button id="openModal1Btn" class="botao-form transitionScale">Saiba Mais</button>
                 </div>
@@ -67,7 +69,7 @@
                 </div>
 
                 </div>
-                <div class="solução2">
+                <div class="solução">
                 <div class="img-sensor">
                     <img id="img-sensor" src="./src/general/sensor.jpg">
                 </div>
@@ -91,12 +93,12 @@
                     </div>
                 </div>
             </div>
-            <div class="solução3">
+            <div class="solução">
             <div class="img-sensor">
                 <img id="img-sensor" src="./src/general/sensor.jpg">
             </div>
             <div id="informação">
-                <h3>intermediário</h3>
+                <h3>Avançado</h3>
                 <p>R$ 10.500,00</p>
                 <button id="openModal3Btn" class="botao-form transitionScale">Saiba Mais</button>
             </div>
@@ -105,7 +107,7 @@
                     <span class="close" onclick="fechar()" id="closeModal3">&times;</span>
                     <img id="img-modal" src="src/general/cisterna-pequena.jpg">
                     <div id="alinhar">
-                        <h2>Sistema de irrigação intermediário</h2>
+                        <h2>Sistema de irrigação avançado</h2>
                         <p>A cisterna é um reservatório que armazena uma quantidade moderada de água e é frequentemente
                             utilizada em hortas de tamanho intermediário, geralmente até 150 metros de comprimento.</p>
                         <h4>R$ 10.500,00</h4>

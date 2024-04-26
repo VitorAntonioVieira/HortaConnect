@@ -28,6 +28,7 @@
         <ul class="menu">
           <li><a href="index.php">Página Inicial</a></li>
           <li><a href="sobrenos.php">Sobre nós</a></li>
+          <li><a href="solucoes.php">Soluções</a></li>
           <li><a href="faleconosco.php">Contato</a></li>
           <li>
             <ul class="submenu">

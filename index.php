@@ -30,11 +30,46 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Horta Connect</title>
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src=".src/general/header-logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src=".src/general/header-logo.svg"
+                            alt=""></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Página inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobrenos.php">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./solucoes.php">Soluções tecnológicas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
     <nav class="header">
         <div class="info">
             <div class="logo-nav-box">
@@ -186,63 +221,72 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </section>
     </div>
     <footer>
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-element">
-                    <div class="footer-grid">
-                        <div class="footer-box">
-                            <img id="footer-logo" src="./src/general/header-logo.webp" alt="">
+        <div class="f-container">
+            <div class="f-content">
+                <div class="f-element">
+                    <div class="f-grid">
+                        <div class="f-box">
+                            <img id="f-logo" src="./src/general/header-logo.webp" alt="">
                         </div>
-                        <div class="footer-box" style="gap: 5em">
-                            <div class="footer-wrap">
+                        <div class="f-box" style="gap: 5em">
+                            <div class="f-wrap">
                                 <img class="wrap-icon" src="./src/general/location.svg">
                                 <p class="wrap-text">Av. Monsenhor Theodomiro Lobo, 100 - Parque Res. Maria Elmira,
                                     Caçapava - SP</p>
                             </div>
-                            <div class="footer-wrap">
+                            <div class="f-wrap">
                                 <img class="wrap-icon" src="./src/general/call.svg">
                                 <p class="wrap-text">(12) 99999-9999</p>
                             </div>
-                            <div class="footer-wrap">
+                            <div class="f-wrap">
                                 <img class="wrap-icon" src="./src/general/mail.svg">
                                 <p class="wrap-text">hortaconnect.2024@gmail.com</p>
                             </div>
                         </div>
-                        <div class="footer-box" style="gap: 2em; align-items: center">
-                            <div class="footer-wrap">
+                        <div class="f-box" style="gap: 2em; align-items: center">
+                            <div class="f-wrap">
                                 <p class="wrap-text" style="text-align: center"><strong>@hortaconnect</strong></p>
                             </div>
-                            <div class="footer-sub">
-                                <a class="footer-wrap" style="">
+                            <div class="f-sub">
+                                <a class="f-wrap" style="">
                                     <img class="wrap-icon" src="./src/icone/instagram.webp">
                                 </a>
-                                <a class="footer-wrap" style="">
+                                <a class="f-wrap" style="">
                                     <img class="wrap-icon" src="./src/icone/twitter.webp">
                                 </a>
                             </div>
                         </div>
+<<<<<<< HEAD
                         <div class="footer-box">
                             <h3 class="box-title" id="footer-form">Entre em contato</h3>
                             <form action="#" method="POST"
+=======
+                        <div class="f-box" id="frm-cont">
+                            <h3 class="box-title" id="f-form">Entre em contato</h3>
+                            <form action="/enviar" method="post"
+>>>>>>> 144946098d04af77d456004c375a82b89cfb0949
                                 style="display:flex; justify-content:center; flex-direction:column; align-items:center; width:100%">
-                                <input class="form-input" type="text" id="nome" name="nome" placeholder="Nome" required>
-                                <input class="form-input" type="email" id="email" name="email" placeholder="Email"
+                                <input class="frm-input" type="text" id="nome" name="nome" placeholder="Nome" required>
+                                <input class="frm-input" type="email" id="email" name="email" placeholder="Email"
                                     required>
-                                <input class="form-input" id="mensagem" name="mensagem" style="height: 10vh;"
+                                <input class="frm-input" id="mensagem" name="mensagem" style="height: 10vh;"
                                     placeholder="Digite sua mensagem..." required></input>
                                 <button type="submit" class="botao-form transitionScale">Enviar</button>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="footer-element" style="display:flex; flex-direction:column;">
-                    <div class="footer-divisor"></div>
+                <div class="f-element" style="display:flex; flex-direction:column;">
+                    <div class="f-divisor"></div>
                     <p class="content-text" style="color:#ffffff">Tech Motion 2024 - SESISENAI SP</p>
                 </div>
             </div>
         </div>
-    </footer>
-    <script src="./js/main.js" defer></script>
+        </f>
+        <script src="./js/main.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

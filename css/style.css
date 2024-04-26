@@ -468,8 +468,6 @@ section.ondas-box {
     font-size: 15px;
 }
 
-
-
 textarea {
     width: 300px;
     resize: none;
@@ -607,12 +605,12 @@ footer {
     height: 90vh;
 }
 
-.footer-container {
+.f-container {
     width: 90%;
     padding: 0 1vw;
 }
 
-.footer-content {
+.f-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -625,16 +623,16 @@ footer {
     height: 83.5%;
 }
 
-.footer-element {
+.f-element {
     width: 100%;
 }
 
-.footer-grid {
+.f-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.footer-box {
+.f-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -644,7 +642,7 @@ footer {
     padding: 1em
 }
 
-#footer-logo {
+#f-logo {
     width: 15vw;
     height: 12vh;
 
@@ -652,7 +650,7 @@ footer {
     object-position: center;
 }
 
-.footer-wrap {
+.f-wrap {
     display: flex;
     flex-direction: row !important;
     align-items: center !important;
@@ -661,7 +659,7 @@ footer {
     gap: 1vw;
 }
 
-.footer-sub {
+.f-sub {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -686,7 +684,14 @@ footer {
     width: 15vw;
 }
 
-.form-input {
+#f-form {
+    color: var(--white);
+    font-size: 20px;
+
+    padding-top: 30px;
+  }
+
+.frm-input {
     width: 90%;
     height: 28px;
 
@@ -696,7 +701,7 @@ footer {
     font-family: var(--s-font);
 }
 
-.footer-divisor {
+.f-divisor {
     background-color: var(--white);
     width: 100%;
 
@@ -875,39 +880,39 @@ footer {
         height: 60px;
     }
 
-    footer {
+    f {
         height: auto;
     }
 
-    .footer-content {
+    .f-content {
         padding-top: 3vh;
     }
 
-    .footer-grid {
+    .f-grid {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr auto 1fr;
     }
 
-    .footer-box {
+    .f-box {
         width: 100%;
         height: auto;
 
         padding: 0;
     }
 
-    .footer-box:nth-child(1) {
+    .f-box:nth-child(1) {
         height: 100px;
     }
 
-    .footer-box:nth-child(4) {
+    .f-box:nth-child(4) {
         align-items: center;
     }
 
-    .footer-wrap {
+    .f-wrap {
         justify-content: unset;
     }
 
-    #footer-logo {
+    #f-logo {
         width: 90%;
     }
 
@@ -915,13 +920,13 @@ footer {
         width: auto;
     }
 
-    #footer-form {
+    #f-form {
         color: var(--white);
 
         padding-top: 30px;
     }
 
-    .footer-element:nth-child(2) {
+    .f-element:nth-child(2) {
         padding-top: -50px;
     }
 
@@ -933,5 +938,9 @@ footer {
         100% {
             transform: translateY(12px);
         }
+    }
+
+    .fixed-top {
+        position:inherit;
     }
 }

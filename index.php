@@ -30,14 +30,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Horta Connect</title>
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar fixed-top" style="display:none">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src=".src/general/header-logo.svg" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -63,6 +61,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <a class="nav-link" href="./solucoes.php">Soluções tecnológicas</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#f-form">Contato</a>
+                        </li>
+                        <li class="nav-item">
                             <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>
                         </li>
                     </ul>
@@ -79,12 +80,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <ul class="menu">
                     <li><a href="index.php">Página Inicial</a></li>
                     <li><a href="sobrenos.php">Sobre nós</a></li>
-                    <li><a href="#footer-form">Contato</a></li>
-                    <li>
-                        <ul class="submenu">
-                            <li><a href="#">Soluções Tecnológicas</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="solucoes.php">Soluções Tecnológicas</a></li>
+                    <li><a href="#f-form">Contato</a></li>
                 </ul>
                 <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>
             </div>
@@ -256,15 +253,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 </a>
                             </div>
                         </div>
-<<<<<<< HEAD
-                        <div class="footer-box">
-                            <h3 class="box-title" id="footer-form">Entre em contato</h3>
-                            <form action="#" method="POST"
-=======
                         <div class="f-box" id="frm-cont">
                             <h3 class="box-title" id="f-form">Entre em contato</h3>
-                            <form action="/enviar" method="post"
->>>>>>> 144946098d04af77d456004c375a82b89cfb0949
+                            <form action="#" method="post"
                                 style="display:flex; justify-content:center; flex-direction:column; align-items:center; width:100%">
                                 <input class="frm-input" type="text" id="nome" name="nome" placeholder="Nome" required>
                                 <input class="frm-input" type="email" id="email" name="email" placeholder="Email"

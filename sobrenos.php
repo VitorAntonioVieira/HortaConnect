@@ -8,6 +8,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="shortcut icon" href="../the-rosa/images/favicon.ico" type="image/x-icon">
   <title>Sobre nós</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <!--Font awesome CDN-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
   <!--Scroll reveal CDN-->
@@ -16,6 +18,40 @@
 </head>
 
 <body>
+  <nav class="navbar fixed-top" style="display:none">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src=".src/general/header-logo.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src=".src/general/header-logo.svg" alt=""></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Página inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobrenos.php">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./solucoes.php">Soluções tecnológicas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#f-form">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
   <!-- Header Start -->
   <nav class="header">
     <div class="info">
@@ -26,23 +62,18 @@
         <ul class="menu">
           <li><a href="index.php">Página Inicial</a></li>
           <li><a href="sobrenos.php">Sobre nós</a></li>
-          <li><a href="faleconosco.php">Contato</a></li>
-          <li>
-            <ul class="submenu">
-              <li><a href="#">Soluções Tecnológicas</a></li>
-            </ul>
-          </li>
+          <li><a href="solucoes.php">Soluções Tecnológicas</a></li>
+          <li><a href="#f-form">Contato</a></li>
         </ul>
         <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>
       </div>
     </div>
   </nav>
   <!-- Header End -->
-
   <!-- Discover Our Story --> <br><br><br><br><br><br>
   <section class="dicover-our-story">
     <div class="container">
-      <div class="restaurant-info">
+      <div class="restaurant-info" id="panel">
         <div class="restaurant-description padding-right animate-left">
           <div class="global-headline">
             <!-- <h2 class="sub-headline">
@@ -63,7 +94,6 @@
         <div class="restaurant-info-img animate-right">
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="400px" height="400px"
             viewBox="0 0 2002.000000 1909.000000" preserveAspectRatio="xMidYMid meet">
-
             <g transform="translate(0.000000,1909.000000) scale(0.100000,-0.100000)" fill="blue" stroke="none">
               <path d="M8639 19062 c-119 -316 -1203 -3161 -1208 -3170 -4 -8 -71 -40 -147
 -71 -76 -31 -192 -81 -258 -111 -101 -46 -122 -52 -145 -43 -14 5 -718 333
@@ -110,13 +140,10 @@ c36 -99 140 -283 213 -381 98 -131 250 -277 372 -358 95 -64 258 -151 281
       </div>
     </div>
   </section>
-
   <!-- Discover Our Story End -->
-
   <!-- Tasteful Recipes -->
   <section class="tasteful-recipes between">
     <div class="container">
-
       <div class="animate-bottom text-center">
         <hr id="hr2" />
         <h1 class="headline" style="color: #376633;">HORTA CONNECT</h1>
@@ -125,9 +152,7 @@ c36 -99 140 -283 213 -381 98 -131 250 -277 372 -358 95 -64 258 -151 281
     </div>
     </div>
   </section>
-
   <!-- Tasteful Recipes End -->
-
   <!-- Discover Our Menu -->
   <section class="discover-our-menu">
     <div class="container">
@@ -160,11 +185,7 @@ c36 -99 140 -283 213 -381 98 -131 250 -277 372 -358 95 -64 258 -151 281
     </div>
   </section>
   <!-- Discover Our Menu End -->
-
   <hr id="hr" />
-
-
-
   <!-- Culinary Delight -->
   <section class="culinary-delight">
     <div class="container">
@@ -194,122 +215,119 @@ c36 -99 140 -283 213 -381 98 -131 250 -277 372 -358 95 -64 258 -151 281
     </div>
   </section>
   <!-- Culinary Delight End -->
-
-
-      <hr id="hr" />
-      <!-- The Perfect Blend -->
-      <section class="perfect-blend between">
-        <div class="container">
-          <div class="global-headline">
-            <div class="animate-top">
-              <!-- <h2 class="sub-headline">
+  </section>
+  <!-- Culinary Delight End -->
+  <hr id="hr" />
+  <!-- The Perfect Blend -->
+  <section class="perfect-blend between">
+    <div class="container">
+      <div class="global-headline">
+        <div class="animate-top">
+          <!-- <h2 class="sub-headline">
             <span class="first-letter">T</span>he Perfect
           </h2> -->
-            </div>
-            <h1 class="headline" style="color: #376633;">Colaboradores</h1>
-            <div class="integrantes">
-              <div class="animate-bottom">
-                <div class="img-integrantes">
-                  <div class="teste-img">
-                    <img id="alice" src="./src/integrantes/foto-alice.jpg">
-                    <div class="descricao">
-                      <p class="nome">Alice de Lima</p>
-                      <p class="funcao">Back-end e Segurança</p>
-                    </div>
-                  </div>
-                  <div class="teste-img">
-                    <img id="lana" src="./src/integrantes/foto-lana.jpg">
-                    <div class="descricao">
-                      <p class="nome">Lana Araújo</p>
-                      <p class="funcao">Design</p>
-                    </div>
-                  </div>
-                  <div class="teste-img">
-                    <img id="rafael" src="./src/integrantes/foto-rafael.jpg">
-                    <div class="descricao">
-                      <p class="nome">Rafael Henrique</p>
-                      <p class="funcao">Analista</p>
-                    </div>
-                  </div>
-                  <div class="teste-img">
-                    <img id="vitor" src="./src/integrantes/foto-vitor.jpg">
-                    <div class="descricao">
-                      <p class="nome">Vitor Antonio</p>
-                      <p class="funcao">Product owner</p>
-                    </div>
-                  </div>
+        </div>
+        <h1 class="headline" style="color: #376633;">Colaboradores</h1>
+        <div class="integrantes">
+          <div class="animate-bottom">
+            <div class="img-integrantes">
+              <div class="teste-img">
+                <img id="alice" src="./src/integrantes/foto-alice.jpg">
+                <div class="descricao">
+                  <p class="nome">Alice de Lima</p>
+                  <p class="funcao">Back-end e Segurança</p>
+                </div>
+              </div>
+              <div class="teste-img">
+                <img id="lana" src="./src/integrantes/foto-lana.jpg">
+                <div class="descricao">
+                  <p class="nome">Lana Araújo</p>
+                  <p class="funcao">Design</p>
+                </div>
+              </div>
+              <div class="teste-img">
+                <img id="rafael" src="./src/integrantes/foto-rafael.jpg">
+                <div class="descricao">
+                  <p class="nome">Rafael Henrique</p>
+                  <p class="funcao">Analista</p>
+                </div>
+              </div>
+              <div class="teste-img">
+                <img id="vitor" src="./src/integrantes/foto-vitor.jpg">
+                <div class="descricao">
+                  <p class="nome">Vitor Antonio</p>
+                  <p class="funcao">Product owner</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
-        </div>
-        </div>
-      </section>
-      <!-- The Perfect Blend End -->
-
-      <!-- Footer -->
-      <script src="js/sobrenos.js"></script>
-
-      <footer>
-        <div class="f-container">
-            <div class="f-content">
-                <div class="f-element">
-                    <div class="f-grid">
-                        <div class="f-box">
-                            <img id="f-logo" src="./src/general/header-logo.webp" alt="">
-                        </div>
-                        <div class="f-box" style="gap: 5em">
-                            <div class="f-wrap">
-                                <img class="wrap-icon" src="./src/general/location.svg">
-                                <p class="wrap-text">Av. Monsenhor Theodomiro Lobo, 100 - Parque Res. Maria Elmira,
-                                    Caçapava - SP</p>
-                            </div>
-                            <div class="f-wrap">
-                                <img class="wrap-icon" src="./src/general/call.svg">
-                                <p class="wrap-text">(12) 99999-9999</p>
-                            </div>
-                            <div class="f-wrap">
-                                <img class="wrap-icon" src="./src/general/mail.svg">
-                                <p class="wrap-text">hortaconnect.2024@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="f-box" style="gap: 2em; align-items: center">
-                            <div class="f-wrap">
-                                <p class="wrap-text" style="text-align: center"><strong>@hortaconnect</strong></p>
-                            </div>
-                            <div class="f-sub">
-                                <a class="f-wrap" style="">
-                                    <img class="wrap-icon" src="./src/icone/instagram.webp">
-                                </a>
-                                <a class="f-wrap" style="">
-                                    <img class="wrap-icon" src="./src/icone/twitter.webp">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="f-box" id="frm-cont">
-                            <h3 class="box-title" id="f-form">Entre em contato</h3>
-                            <form action="/enviar" method="post"
-                                style="display:flex; justify-content:center; flex-direction:column; align-items:center; width:100%">
-                                <input class="frm-input" type="text" id="nome" name="nome" placeholder="Nome" required>
-                                <input class="frm-input" type="email" id="email" name="email" placeholder="Email"
-                                    required>
-                                <input class="frm-input" id="mensagem" name="mensagem" style="height: 10vh;"
-                                    placeholder="Digite sua mensagem..." required></input>
-                                <button type="submit" class="botao-form transitionScale">Enviar</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="f-element" style="display:flex; flex-direction:column;">
-                    <div class="f-divisor"></div>
-                    <p class="content-text" style="color:#ffffff">Tech Motion 2024 - SESISENAI SP</p>
-                </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- The Perfect Blend End -->
+  <!-- Footer -->
+  <script src="js/sobrenos.js"></script>
+  <footer>
+    <div class="f-container">
+      <div class="f-content">
+        <div class="f-element">
+          <div class="f-grid">
+            <div class="f-box">
+              <img id="f-logo" src="./src/general/header-logo.webp" alt="">
             </div>
+            <div class="f-box" style="gap: 5em">
+              <div class="f-wrap">
+                <img class="wrap-icon" src="./src/general/location.svg">
+                <p class="wrap-text">Av. Monsenhor Theodomiro Lobo, 100 - Parque Res. Maria Elmira,
+                  Caçapava - SP</p>
+              </div>
+              <div class="f-wrap">
+                <img class="wrap-icon" src="./src/general/call.svg">
+                <p class="wrap-text">(12) 99999-9999</p>
+              </div>
+              <div class="f-wrap">
+                <img class="wrap-icon" src="./src/general/mail.svg">
+                <p class="wrap-text">hortaconnect.2024@gmail.com</p>
+              </div>
+            </div>
+            <div class="f-box" style="gap: 2em; align-items: center">
+              <div class="f-wrap">
+                <p class="wrap-text" style="text-align: center"><strong>@hortaconnect</strong></p>
+              </div>
+              <div class="f-sub">
+                <a class="f-wrap" style="">
+                  <img class="wrap-icon" src="./src/icone/instagram.webp">
+                </a>
+                <a class="f-wrap" style="">
+                  <img class="wrap-icon" src="./src/icone/twitter.webp">
+                </a>
+              </div>
+            </div>
+            <div class="f-box" id="frm-cont">
+              <h3 class="box-title" id="f-form">Entre em contato</h3>
+              <form action="/enviar" method="post"
+                style="display:flex; justify-content:center; flex-direction:column; align-items:center; width:100%">
+                <input class="frm-input" type="text" id="nome" name="nome" placeholder="Nome" required>
+                <input class="frm-input" type="email" id="email" name="email" placeholder="Email" required>
+                <input class="frm-input" id="mensagem" name="mensagem" style="height: 10vh;"
+                  placeholder="Digite sua mensagem..." required></input>
+                <button type="submit" class="botao-form transitionScale">Enviar</button>
+              </form>
+            </div>
+          </div>
         </div>
-      </footer>
-      <script src="./js/main.js"></script>
+        <div class="f-element" style="display:flex; flex-direction:column;">
+          <div class="f-divisor"></div>
+          <p class="content-text" style="color:#ffffff">Tech Motion 2024 - SESISENAI SP</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
   <script src="js/sobrenos.js"></script>
 </body>
 

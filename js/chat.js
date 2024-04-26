@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         sendQuestion();
     });
 
-    const OPENAI_API_KEY = "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";
+    const OPENAI_API_KEY = "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";
 
     function sendQuestion() {
         var sQuestion = inputQuestion.value;

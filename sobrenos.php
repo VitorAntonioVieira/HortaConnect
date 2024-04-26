@@ -62,18 +62,8 @@
         <ul class="menu">
           <li><a href="index.php">Página Inicial</a></li>
           <li><a href="sobrenos.php">Sobre nós</a></li>
-<<<<<<< HEAD
-          <li><a href="solucoes.php">Soluções</a></li>
-          <li><a href="faleconosco.php">Contato</a></li>
-          <li>
-            <ul class="submenu">
-              <li><a href="#">Soluções Tecnológicas</a></li>
-            </ul>
-          </li>
-=======
           <li><a href="solucoes.php">Soluções Tecnológicas</a></li>
           <li><a href="#f-form">Contato</a></li>
->>>>>>> 2d181d53e7deea1e81345b67669c9eef50358f95
         </ul>
         <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>
       </div>

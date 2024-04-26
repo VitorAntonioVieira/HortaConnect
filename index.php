@@ -80,11 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <ul class="menu">
                     <li><a href="index.php">Página Inicial</a></li>
                     <li><a href="sobrenos.php">Sobre nós</a></li>
-<<<<<<< HEAD
-                    <li><a href="solucoes.php">Soluções</a></li>
-=======
                     <li><a href="solucoes.php">Soluções Tecnológicas</a></li>
->>>>>>> 2d181d53e7deea1e81345b67669c9eef50358f95
                     <li><a href="#f-form">Contato</a></li>
                 </ul>
                 <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>

@@ -10,6 +10,12 @@
     --s-font: 'Montserrat', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--s-font);
     font-size: 12px;
@@ -63,9 +69,35 @@ body {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
   }
   nav {
+
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 90%, rgba(106, 252, 69, 1) 100%);
+    background-size: 100% 100% cover;
+    background-position: center;
+    height: 100vh;
+
+    animation: gradient 5s linear infinite alternate;
+}
+
+/* Header Style  */
+.center {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+}
+
+.hidden, .hidden-v {
+    visibility: hidden;
+}
+
+.navbar.navbar.fixed-top {
+    display: none;
+}
+
+nav.header {
     position: fixed;
     width: 100%;
-    background: white;
     top: 0;
     z-index: 1000;
   }
@@ -111,12 +143,46 @@ body {
     transition: .5s;
   }
   .nav-wrap {
+    z-index: 1001;
+    padding-top: 2vh;
+
+    transition: .5s;
+}
+
+nav.scrolled {
+    background-color: var(--white);
+    padding: 0;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-nav-box {
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 9.5vw;
+}
+
+#logo-nav {
+    width: 100%;
+    opacity: 0;
+
+    transition: .5s;
+}
+
+.nav-wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-right: 2vw;
   }
   .menu {
+}
+
+.menu {
     list-style: none;
     float: left;
     display: flex;
@@ -190,6 +256,29 @@ body {
     cursor: pointer;
     transform: scale(1.1);
   }
+}
+
+.login-btn {
+    background-color: var(--m-yellow);
+
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--s-font);
+
+    color: var(--white);
+
+    border-radius: 5px;
+    border: 0px;
+
+    width: 9vw;
+    height: 6vh;
+}
+
+.transitionScale.login-btn:hover {
+    cursor: pointer;
+
+    transform: scale(1.1);
+}
 /* DIV conteiner */
 
 #img-sensor {

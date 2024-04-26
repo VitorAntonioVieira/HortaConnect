@@ -29,7 +29,13 @@ body {
     scroll-behavior: smooth;
   }
   body {
+    height: 100vh;
     overflow-x: hidden;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 90%, rgba(106, 252, 69, 1) 100%);
+    background-size: 100% 100% cover;
+    background-position: center;
+
+    animation: gradient 5s linear infinite alternate;
   }
   section {
     padding: 3.9rem 0;
@@ -308,7 +314,7 @@ h3 {
     border: var(--m-yellow) solid 2px;
     border-radius: 5px;
     margin-top: 10px; /* Adicionado para criar espaço entre o texto e o botão */
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 
 
@@ -384,8 +390,116 @@ h2 {
     align-items: center;
     border: #ffffff solid 1px;
     border-radius: 15px;
-    /* margin-inline: 60px; */
+    margin-inline: 60px; 
     width: 230px;
     background-color: #efeaead5;
     padding: 5px; /* Ajuste o espaçamento interno aqui */
+    justify-content: center;
+}
+/* f */
+footer {
+  display: flex;
+  justify-content: center;
+  background: rgb(55, 102, 51);
+  background: linear-gradient(135deg, rgba(55, 102, 51, 1) 0%, rgba(63, 117, 58, 1) 35%, rgba(53, 153, 43, 1) 100%);
+  width: 100%;
+  height: 90vh;
+}
+.f-container {
+  width: 90%;
+  padding: 0 1vw;
+}
+.f-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10vh 0 3vh 0;
+  margin: 0 1vw;
+  gap: 4vh;
+  height: 83.5%;
+}
+.f-element {
+  width: 100%;
+}
+.f-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.f-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  padding: 1em
+}
+#f-logo {
+  width: 15vw;
+  height: 12vh;
+  object-fit: cover;
+  object-position: center;
+}
+.f-wrap {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center;
+  gap: 1vw;
+}
+.f-sub {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1.3em 0;
+  width: 70%;
+  border-radius: 8px;
+  background-color: var(--s-green);
+}
+.wrap-icon {
+  width: 2.5em;
+}
+.wrap-text {
+  color: var(--white);
+  font-family: var(--s-font);
+  font-size: 1.2em;
+  width: 15vw;
+}
+#f-form {
+  color: var(--white);
+  font-size: 20px;
+  padding-top: 30px;
+}
+.frm-input {
+  width: 90%;
+  height: 28px;
+  border-radius: 15px;
+  border-color: transparent;
+  font-family: var(--s-font);
+}
+.f-divisor {
+  background-color: var(--white);
+  width: 100%;
+  height: 2px;
+  margin-bottom: 6vh;
+}
+.botao-form {
+  width: 82%;
+  padding: 10px;
+  margin-top: 5%;
+  background-color: transparent;
+  color: var(--m-yellow);
+  font-weight: bold;
+  font-family: var(--s-font);
+  border: var(--m-yellow) solid 2px;
+  border-radius: 5px;
+}
+.transitionScale {
+  transition: 1s;
+}
+.botao-form.transitionScale:hover {
+  background-color: var(--m-yellow);
+  color: var(--white);
+  border-color: transparent;
+  scale: 1.1;
 }

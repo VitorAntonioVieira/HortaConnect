@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="text-block">
                     <h1 class="panel" id="panel-title">HortaConnect</h1>
                     <text class="panel" id="panel-text">"Transformando sementes de ideias, em colheitas de
-                        sucesso”
+                        sucesso”.
                     </text>
                 </div>
             </div>
@@ -245,13 +245,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <p class="wrap-text" style="text-align: center"><strong>@hortaconnect</strong></p>
                             </div>
                             <div class="f-sub">
-                                <a class="f-wrap" style="">
-                                    <img class="wrap-icon" src="./src/icone/instagram.webp">
+                                <a class="f-wrap" href="https://www.instagram.com/hortaConnect/">
+                                    <img class="wrap-icon" src="./src/icone/instagram.webp" alt="Instagram">
                                 </a>
-                                <a class="f-wrap" style="">
-                                    <img class="wrap-icon" src="./src/icone/twitter.webp">
+                                <a class="f-wrap" href="https://twitter.com/hortaConnect">
+                                    <img class="wrap-icon" src="./src/icone/twitter.webp" alt="Twitter">
                                 </a>
                             </div>
+
                         </div>
                         <div class="f-box" id="frm-cont">
                             <h3 class="box-title" id="f-form">Entre em contato</h3>

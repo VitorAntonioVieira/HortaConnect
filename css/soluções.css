@@ -206,7 +206,7 @@ body {
 }
 
 h1 {
-    font-family: sans-serif;
+    font-family: var(--m-font);
     text-align: center;
     color: #3f753a;
     font-size:55px;
@@ -309,7 +309,7 @@ h1 {
 
   
 h3 {
-    font-family: sans-serif;
+    font-family: var(--m-font);
     color: #3f753a;
     text-align: center;
 }
@@ -447,6 +447,7 @@ footer {
   background: linear-gradient(135deg, rgba(55, 102, 51, 1) 0%, rgba(63, 117, 58, 1) 35%, rgba(53, 153, 43, 1) 100%);
   width: 100%;
   height: 90vh;
+  margin-top: 200px;
 }
 .f-container {
   width: 90%;

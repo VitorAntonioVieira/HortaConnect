@@ -299,10 +299,10 @@ c36 -99 140 -283 213 -381 98 -131 250 -277 372 -358 95 -64 258 -151 281
                 <p class="wrap-text" style="text-align: center"><strong>@hortaconnect</strong></p>
               </div>
               <div class="f-sub">
-                <a class="f-wrap" href="https://www.instagram.com/hortaConnect/">
+                <a href="https://instagram.com/hortaconnect" class="f-wrap" href="https://www.instagram.com/hortaConnect/">
                   <img class="wrap-icon" src="./src/icone/instagram.webp" alt="Instagram">
                 </a>
-                <a class="f-wrap" href="https://twitter.com/hortaConnect">
+                <a href="https://twitter.com/hortaconnect" class="f-wrap" href="https://twitter.com/hortaConnect">
                   <img class="wrap-icon" src="./src/icone/twitter.webp" alt="Twitter">
                 </a>
               </div>

@@ -73,10 +73,14 @@ include './crud/conexao.php';
             </div>
         </div>
     </nav>
-
+    
     <h1>Soluções Tecnológicas</h1>
     <p class="subtitulo">Irrigação Inteligente</p>
-    <hr id="hr2" />
+    <!-- <div class="hr-container">
+    <h3 style="font-size: 40px; color: #3f753a; text-align: center; margin-top: 30px; margin-bottom: 30px; opacity: 0; animation: fadeIn 1s ease forwards; display: block; width: 100%;">Irrigação Tecnológica</h3>
+        <hr id="hr2"> -->
+    </div>
+
     <div class="container">
         <div class="ume">
             <?php

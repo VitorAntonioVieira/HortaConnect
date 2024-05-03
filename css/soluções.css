@@ -31,7 +31,7 @@ body {
   body {
     height: 100vh;
     overflow-x: hidden;
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 90%, rgba(106, 252, 69, 1) 100%);
+    /* background-image: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 90%, rgba(106, 252, 69, 1) 100%); */
     background-size: 100% 100% cover;
     background-position: center;
 
@@ -52,13 +52,13 @@ body {
     font-size: 1.6rem;
   }
   
-  .container {
+  /* .container {
     margin: 5px;
     }
   
     .container {
     width: 100%;
-  }
+  } */
   /* Header Style  */
   header {
     width: 100%;
@@ -210,9 +210,23 @@ h1 {
     text-align: center;
     color: #3f753a;
     font-size:55px;
-    margin-top: 150px;
+    margin-top: 200px;
+    opacity: 0; /* Inicialmente, esconde os elementos */
+  animation: fadeIn 1s ease forwards; /* Aplica a animação */
     
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 .titulo-container {
     text-align: center;
 }
@@ -234,6 +248,8 @@ h1 {
     font-size:40px;
     margin-top: 30px;
     margin-bottom: 30px;
+    opacity: 0; /* Inicialmente, esconde os elementos */
+  animation: fadeIn 1s ease forwards; /* Aplica a animação */
 
 }
 
@@ -261,13 +277,36 @@ h1 {
     /* Para garantir que ocupe toda a altura da seção */
   }
 
+  .hr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards 0.5s;
+    position: relative; /* Define o posicionamento relativo para o posicionamento absoluto do texto */
+}
+
+.hr-text {
+    position: absolute; /* Define o posicionamento absoluto para posicionar o texto */
+    top: 50%; /* Move o texto para o meio verticalmente */
+    left: 50%; /* Move o texto para o meio horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    background-color: white; /* Define a cor de fundo do texto */
+    padding: 0 10px; /* Adiciona algum espaço ao redor do texto */
+    
+}
+
+
+
 #hr2 {
-    size: 10px;
-    width: 80%;
-    margin-top: 2%;
-    margin-bottom: 30px;
-    background-color: #0000;
-  }
+    width: 100%; /* Certifica-se de que o hr ocupa toda a largura */
+}
+
+
   
 h3 {
     font-family: sans-serif;
@@ -276,12 +315,16 @@ h3 {
 }
 
 .container {
-    align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.ume{
-    display: flex;
+.ume {
+  display: flex; /* Altere para flex */
+  justify-content: center; /* Centralize horizontalmente */
 }
+
+
 .botao-form.transitionScale:active {
     background-color: var(--m-yellow);
     color: var(--white);
@@ -392,7 +435,7 @@ h2 {
     border-radius: 15px;
     margin-inline: 60px; 
     width: 230px;
-    background-color: #efeaead5;
+    background-color: #F8F8FF;
     padding: 5px; /* Ajuste o espaçamento interno aqui */
     justify-content: center;
 }

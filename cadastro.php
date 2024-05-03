@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+include "./crud/conexao.php";
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $nomeCompleto = $_POST['nome'];
@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt = mysqli_prepare($conn, $sql);
     $stmt->bind_param("sss", $email, $nomeCompleto, $hashed_password);
     $stmt->execute();
-    header("Location: ../loginnovo.php");
+    header("Location: ./loginnovo.php");
 }
 $conn->close();
 ?>
@@ -20,7 +20,7 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
     <title>Cadastre-se</title>
 </head>
 
@@ -37,7 +37,7 @@ $conn->close();
             <input type="password" placeholder="Digite sua senha" name="senha" />
             <a href="loginnovo.php">Já tem acesso?</a>
             <a href="#">Esqueci minha senha</a>
-            <a href="../agradecimento.php"><input type="submit" value="Acessar" class="btn" /></a>
+            <a href="#"><input type="submit" value="Cadastre" class="btn" /></a>
         </form>
     </div>
 </body>

@@ -23,9 +23,9 @@ session_start();
             <input type="email" placeholder="Digite seu e-mail" autofocus="true" id="email" name="email" />
             <label for="senha">Senha</label>
             <input type="password" placeholder="Digite sua senha" name="senha" id="senha" />
-            <p>Não tem cadastro? <a href="crud/cadastro.php">Cadastre-se</a></p>
+            <p>Não tem cadastro? <a href="cadastro.php">Cadastre-se</a></p>
             <a href="#">Esqueci minha senha</a>
-            <input type="submit" value="Acessar" class="btn" />
+            <input type="submit" value="Entrar" class="btn" />
         </form>
     </div>
 </body>

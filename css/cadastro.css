@@ -16,7 +16,7 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    color: #023047
+    color: var(--s-green)
 }
 
 .page {
@@ -72,7 +72,7 @@ body {
 
 
 .formLogin input:focus {
-    border: 1px solid var(--s-green);
+    border: 1px solid var(--m-yellow);
 }
 
 .formLogin label {
@@ -93,7 +93,7 @@ body {
 }
 
 .btn {
-    background-color: var(--s-green);
+    background-color: var(--m-yellow);
     color: #fff;
     font-size: 14px;
     font-weight: 600;
@@ -107,5 +107,4 @@ body {
 .btn:hover {
     transform: scale(1.05);
     background-color: var(--s-green);
-
 }

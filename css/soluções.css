@@ -317,6 +317,8 @@ h3 {
 .container {
   display: flex;
   justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
 
 .ume {
@@ -373,7 +375,7 @@ h3 {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
     overflow: auto;
-    margin-top: 100px;
+    margin-top: 140px;
 }
 
 .modal-content {
@@ -383,6 +385,10 @@ h3 {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     max-width: 400px;
+    max-width: 800px; /* Ajuste a largura máxima conforme necessário */
+    display: flex; /* Alterado para flex para permitir layout em linha */
+    justify-content: space-between; /* Espaçamento uniforme entre os elementos */
+
 }
 
 .close {
@@ -401,10 +407,13 @@ h3 {
 }
 
 #img-modal {
-    width: 50%;
-    margin-left: 25%;
+    width: 45%;
+   
 }
 
+.titulo-modal{
+  margin-top: 70px;
+}
 
 
 h4 {
@@ -413,13 +422,24 @@ h4 {
 }
 
 #alinhar {
-    justify-content: center;
-    text-align: justify;
+  flex-grow: 1; /* Permite que o conteúdo cresça verticalmente */
+  margin-left: 20px; /* Adiciona espaço entre a imagem e o texto */
     
 }
 
 p {
+    text-align: justify;
     justify-content: center;
+    margin-top: 5px;
+    margin: 10px;
+
+}
+
+.descricao-modal{
+  margin-top: 30px;
+}
+.valor-modal{
+  margin-top: 40px;
 }
 
 h2 {
@@ -438,6 +458,7 @@ h2 {
     background-color: #F8F8FF;
     padding: 5px; /* Ajuste o espaçamento interno aqui */
     justify-content: center;
+    
 }
 /* f */
 footer {

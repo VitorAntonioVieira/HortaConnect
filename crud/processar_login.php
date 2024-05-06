@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         echo $user['senha'];
         if(password_verify($_POST['senha'], $user['senha'])==true){
             session_start();
-            $_SESSION['usuario_logado'] = $$user['nomeCompleto'];
+            $_SESSION['usuario_logado'] = $user['nomeCompleto'];
 
             sleep(1);
             header('Location: ../index.php');

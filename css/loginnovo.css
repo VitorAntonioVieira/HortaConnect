@@ -1,10 +1,32 @@
+:root {
+    --m-green: #58fa5a;
+    --m-blue: #000085;
+    --black: #181818;
+    --white: #fafafa;
+    --s-green: #376633;
+    --y-white: #e5dca4;
+    --m-yellow: #ffc222;
+    --m-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --s-font: 'Montserrat', sans-serif;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--s-font);
     margin: 0;
     padding: 0;
-    color: #023047
+    color: var(--s-green)
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 10em;
+
 }
 
 .page {
@@ -15,7 +37,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
-   background-image: linear-gradient(to bottom right, #000085, rgb(69, 205, 236));;
+    background-image: linear-gradient(135deg, rgba(55, 102, 51, 1) 0%, rgba(63, 117, 58, 1) 35%, rgba(53, 153, 43, 1) 100%);
 }
 
 .formLogin {
@@ -36,7 +58,7 @@ body {
     padding: 0;
     font-weight: 500;
     font-size: 2.3em;
-    color: #000085;
+    color: var(--m-yellow);
     text-align: center;
 }
 
@@ -60,7 +82,7 @@ body {
 
 
 .formLogin input:focus {
-    border: 1px solid #000085;
+    border: 1px solid var(--m-yellow);
 }
 
 .formLogin label {
@@ -77,11 +99,11 @@ body {
 }
 
 .formLogin a:hover {
-    color: #000085;
+    color: var(--m-yellow);
 }
 
 .btn {
-    background-color: #000085;
+    background-color: var(--m-yellow);
     color: #fff;
     font-size: 14px;
     font-weight: 600;
@@ -94,6 +116,6 @@ body {
 
 .btn:hover {
     transform: scale(1.05);
-    background-color: #000085;
+    background-color: var(--s-green);
 
 }

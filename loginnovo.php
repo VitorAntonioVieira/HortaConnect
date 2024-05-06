@@ -15,15 +15,17 @@ session_start();
 <body>
     <div class="page">
         <form action="crud/processar_login.php" method="POST" class="formLogin">
-            <h1>Login</h1>
+            <div class="logo-container">
+                <img id="logo" src="src/general/header-logo.svg">
+            </div>
             <p>Digite os seus dados de acesso no campo abaixo.</p>
             <label for="email">E-mail</label>
             <input type="email" placeholder="Digite seu e-mail" autofocus="true" id="email" name="email" />
             <label for="senha">Senha</label>
             <input type="password" placeholder="Digite sua senha" name="senha" id="senha" />
-            <a href="crud/cadastro.php">Não tem cadastro?</a>
+            <p>Não tem cadastro? <a href="cadastro.php">Cadastre-se</a></p>
             <a href="#">Esqueci minha senha</a>
-            <input type="submit" value="Acessar" class="btn" />
+            <input type="submit" value="Entrar" class="btn" />
         </form>
     </div>
 </body>

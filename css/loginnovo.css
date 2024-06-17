@@ -44,7 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    border-radius: 7px;
+    border-radius: 15px;
     padding: 40px;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
     gap: 5px
@@ -75,7 +75,7 @@ body {
     border: 1px solid #ccc;
     margin-bottom: 20px;
     margin-top: 5px;
-    border-radius: 4px;
+    border-radius: 15px;
     transition: all linear 160ms;
     outline: none;
 }
@@ -93,7 +93,9 @@ body {
 .formLogin a {
     display: inline-block;
     margin-bottom: 20px;
-    font-size: 13px;
+    font-family: var(--s-font);
+    font-weight: 600;
+    font-size: 14px;
     color: #555;
     transition: all linear 160ms;
 }

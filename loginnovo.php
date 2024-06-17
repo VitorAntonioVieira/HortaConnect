@@ -24,7 +24,7 @@ session_start();
             <label for="senha">Senha</label>
             <input type="password" placeholder="Digite sua senha" name="senha" id="senha" />
             <p>Não tem cadastro? <a href="cadastro.php">Cadastre-se</a></p>
-            <a href="#">Esqueci minha senha</a>
+            <a href="./redefinir.php">Esqueci minha senha</a>
             <input type="submit" value="Entrar" class="btn" />
         </form>
     </div>

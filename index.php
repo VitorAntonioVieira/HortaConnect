@@ -88,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $nome = explode(" ", $_SESSION['usuario_logado']);
                     echo '<div style="display: flex; align-items: center;"><span style="font-size: 32px; margin-right: -10px" class="material-symbols-outlined">
                     account_circle
-                    </span><label for="logout" class="menu">Bem vindo, '. $nome[0].'</label>
+                    </span><label for="logout" class="menu">Bem vindo, ' . $nome[0] . '</label>
                     <a href="./crud/logout.php"><button class="transitionScale login-btn">Sair</button></a>
                     </div>';
                 } else {
@@ -170,9 +170,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 produções, auxiliando no impacto econômico e social, de modo que não haja impacto no meio ambiente. </p>
         </div>
         <div class="content-block hidden-v center">
-            <iframe class="content-video"
-                src="https://drive.google.com/file/d/1bonlDVAs7FcrNGw47seMnX5RbKziu2ZW/preview" width="80%"
-                height="273.49vh"></iframe>
+            <iframe src="https://drive.google.com/file/d/1Zl40lCAtIgm-Rddwf3p0cz9rpNskzOWi/preview" width="640"
+                height="480" allow="autoplay"></iframe>
         </div>
     </section>
     <section class="content-t-grid hidden">

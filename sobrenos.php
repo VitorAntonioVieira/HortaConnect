@@ -6,7 +6,7 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="shortcut icon" href="../the-rosa/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" type="imagex/png" href="./src/icone/logo-icon.ico">
   <title>Sobre nós</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
@@ -299,13 +299,14 @@ c36 -99 140 -283 213 -381 98 -131 250 -277 372 -358 95 -64 258 -151 281
                 <p class="wrap-text" style="text-align: center"><strong>@hortaconnect</strong></p>
               </div>
               <div class="f-sub">
-                <a class="f-wrap" style="">
-                  <img class="wrap-icon" src="./src/icone/instagram.webp">
+                <a href="https://instagram.com/hortaconnect" class="f-wrap" href="https://www.instagram.com/hortaConnect/">
+                  <img class="wrap-icon" src="./src/icone/instagram.webp" alt="Instagram">
                 </a>
-                <a class="f-wrap" style="">
-                  <img class="wrap-icon" src="./src/icone/twitter.webp">
+                <a href="https://twitter.com/hortaconnect" class="f-wrap" href="https://twitter.com/hortaConnect">
+                  <img class="wrap-icon" src="./src/icone/twitter.webp" alt="Twitter">
                 </a>
               </div>
+
             </div>
             <div class="f-box" id="frm-cont">
               <h3 class="box-title" id="f-form">Entre em contato</h3>

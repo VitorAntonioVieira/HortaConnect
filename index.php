@@ -83,7 +83,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <li><a href="solucoes.php">Soluções Tecnológicas</a></li>
                     <li><a href="#f-form">Contato</a></li>
                 </ul>
-                <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>
+                <?php
+                if (isset($_SESSION['usuario_logado'])) {
+                    $nome = explode(" ", $_SESSION['usuario_logado']);
+                    echo '<div style="display: flex; align-items: center;"><span style="font-size: 32px; margin-right: -10px" class="material-symbols-outlined">
+                    account_circle
+                    </span><label for="logout" class="menu">Bem vindo, '. $nome[0].'</label>
+                    <a href="./crud/logout.php"><button class="transitionScale login-btn">Sair</button></a>
+                    </div>';
+                } else {
+                    echo '<a href="./loginnovo.php"><button class="transitionScale login-btn">Entrar</button></a>';
+                }
+                ?>
             </div>
         </div>
     </nav>
@@ -95,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="text-block">
                     <h1 class="panel" id="panel-title">HortaConnect</h1>
                     <text class="panel" id="panel-text">"Transformando sementes de ideias, em colheitas de
-                        sucesso”
+                        sucesso”.
                     </text>
                 </div>
             </div>
@@ -245,13 +256,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <p class="wrap-text" style="text-align: center"><strong>@hortaconnect</strong></p>
                             </div>
                             <div class="f-sub">
-                                <a class="f-wrap" style="">
-                                    <img class="wrap-icon" src="./src/icone/instagram.webp">
+                                <a href="https://instagram.com/hortaconnect" class="f-wrap"
+                                    href="https://www.instagram.com/hortaConnect/">
+                                    <img class="wrap-icon" src="./src/icone/instagram.webp" alt="Instagram">
                                 </a>
-                                <a class="f-wrap" style="">
-                                    <img class="wrap-icon" src="./src/icone/twitter.webp">
+                                <a href="https://twitter.com/hortaconnect" class="f-wrap"
+                                    href="https://twitter.com/hortaConnect">
+                                    <img class="wrap-icon" src="./src/icone/twitter.webp" alt="Twitter">
                                 </a>
                             </div>
+
                         </div>
                         <div class="f-box" id="frm-cont">
                             <h3 class="box-title" id="f-form">Entre em contato</h3>

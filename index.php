@@ -35,53 +35,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
-    <nav class="navbar fixed-top" style="display:none">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src=".src/general/header-logo.svg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src=".src/general/header-logo.svg"
-                            alt=""></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Página inicial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./sobrenos.php">Sobre nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./solucoes.php">Soluções tecnológicas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#f-form">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
     <nav class="header">
         <div class="info">
-            <div class="logo-nav-box">
+            <div class="logo-nav-box hideOnMobile">
                 <img id="logo-nav" src="src/general/header-logo.svg">
             </div>
             <div class="nav-wrap">
                 <ul class="menu">
-                    <li><a href="index.php">Página Inicial</a></li>
-                    <li><a href="sobrenos.php">Sobre nós</a></li>
-                    <li><a href="solucoes.php">Soluções Tecnológicas</a></li>
-                    <li><a href="#f-form">Contato</a></li>
+                    <li class="hideOnMobile"><a href="index.php">Página Inicial</a></li>
+                    <li class="hideOnMobile"><a href="sobrenos.php">Sobre nós</a></li>
+                    <li class="hideOnMobile"><a href="solucoes.php">Soluções Tecnológicas</a></li>
+                    <li class="hideOnMobile"><a href="#f-form">Contato</a></li>
+                    <li class="menu-button"><a href="#">
+                            <span class="material-symbols-outlined">
+                                menu
+                            </span>
+                        </a></li>
                 </ul>
                 <?php
                 if (isset($_SESSION['usuario_logado'])) {
@@ -96,6 +65,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
                 ?>
             </div>
+            <ul class="sidebar">
+                <li id="close-btn" style="align-self: flex-end; margin-bottom: 20px"><a href="#"><span
+                            class="material-symbols-outlined" style="width: 32px; color: black">close</span></a></li>
+                <li class="menu-option"><a href="index.php">Página Inicial</a></li>
+                <li class="menu-option"><a href="sobrenos.php">Sobre Nós</a></li>
+                <li class="menu-option"><a href="solucoes.php">Soluções Tecnológicas</a></li>
+                <li class="menu-option"><a href="#f-form">Contato</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -170,8 +147,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 produções, auxiliando no impacto econômico e social, de modo que não haja impacto no meio ambiente. </p>
         </div>
         <div class="content-block hidden-v center">
-            <iframe src="https://drive.google.com/file/d/1Zl40lCAtIgm-Rddwf3p0cz9rpNskzOWi/preview" width="640"
-                height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1Zl40lCAtIgm-Rddwf3p0cz9rpNskzOWi/preview" width="auto"
+                height="auto" allow="autoplay"></iframe>
         </div>
     </section>
     <section class="content-t-grid hidden">

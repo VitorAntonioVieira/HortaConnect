@@ -7,7 +7,12 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="shortcut icon" type="imagex/png" href="./src/icone/logo-icon.ico">
-  <title>Sobre nós</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <!--Font awesome CDN-->
@@ -15,60 +20,50 @@
   <!--Scroll reveal CDN-->
   <script src="https://unpkg.com/scrollreveal"></script>
   <link rel="stylesheet" href="css/sobrenos.css" />
+  <title>Sobre nós</title>
 </head>
 
 <body>
-  <nav class="navbar fixed-top" style="display:none">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src=".src/general/header-logo.svg" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src=".src/general/header-logo.svg" alt=""></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<nav class="header">
+        <div class="info">
+            <div class="logo-nav-box hideOnMobile">
+                <img id="logo-nav" src="src/general/header-logo.svg">
+            </div>
+            <div class="nav-wrap">
+                <ul class="menu">
+                    <li class="hideOnMobile"><a href="index.php">Página Inicial</a></li>
+                    <li class="hideOnMobile"><a href="sobrenos.php">Sobre nós</a></li>
+                    <li class="hideOnMobile"><a href="solucoes.php">Soluções Tecnológicas</a></li>
+                    <li class="hideOnMobile"><a href="#f-form">Contato</a></li>
+                    <li class="menu-button"><a onclick="openMenu()" href="#">
+                            <span class="material-symbols-outlined">
+                                menu
+                            </span>
+                        </a></li>
+                </ul>
+                <?php
+                if (isset($_SESSION['usuario_logado'])) {
+                    $nome = explode(" ", $_SESSION['usuario_logado']);
+                    echo '<div style="display: flex; align-items: center;"><span style="font-size: 32px; margin-right: -10px" class="material-symbols-outlined">
+                    account_circle
+                    </span><label for="logout" class="menu">Bem vindo, ' . $nome[0] . '</label>
+                    <a href="./crud/logout.php"><button class="transitionScale login-btn">Sair</button></a>
+                    </div>';
+                } else {
+                    echo '<a href="./loginnovo.php"><button class="transitionScale login-btn">Entrar</button></a>';
+                }
+                ?>
+            </div>
+            <ul class="sidebar">
+                <li id="close-btn" style="align-self: flex-end; margin-bottom: 20px"><a onclick="closeMenu()" href="#"><span
+                            class="material-symbols-outlined" style="width: 32px; color: black">close</span></a></li>
+                <li class="menu-option"><a href="index.php">Página Inicial</a></li>
+                <li class="menu-option"><a href="sobrenos.php">Sobre Nós</a></li>
+                <li class="menu-option"><a href="solucoes.php">Soluções Tecnológicas</a></li>
+                <li class="menu-option"><a href="#f-form">Contato</a></li>
+            </ul>
         </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Página inicial</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./sobrenos.php">Sobre nós</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./solucoes.php">Soluções tecnológicas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#f-form">Contato</a>
-            </li>
-            <li class="nav-item">
-              <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-  <!-- Header Start -->
-  <nav class="header">
-    <div class="info">
-      <div class="logo-nav-box">
-        <img id="logo-nav" src="./src/general/header-logo.svg">
-      </div>
-      <div class="nav-wrap">
-        <ul class="menu">
-          <li><a href="index.php">Página Inicial</a></li>
-          <li><a href="sobrenos.php">Sobre nós</a></li>
-          <li><a href="solucoes.php">Soluções Tecnológicas</a></li>
-          <li><a href="#f-form">Contato</a></li>
-        </ul>
-        <a href="./loginnovo.php"><button class="transitionScale login-btn">Login</button></a>
-      </div>
-    </div>
-  </nav>
+    </nav>
   <!-- Header End -->
   <!-- Discover Our Story --> <br><br><br><br><br><br>
   <section class="dicover-our-story">
@@ -92,7 +87,7 @@
           <!-- <a href="#" class="btn body-btn">About Us</a> -->
         </div>
         <div class="restaurant-info-img animate-right">
-          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="400px" height="400px"
+          <svg id="svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="400px" height="400px"
             viewBox="0 0 2002.000000 1909.000000" preserveAspectRatio="xMidYMid meet">
             <g transform="translate(0.000000,1909.000000) scale(0.100000,-0.100000)" fill="blue" stroke="none">
               <path d="M8639 19062 c-119 -316 -1203 -3161 -1208 -3170 -4 -8 -71 -40 -147
@@ -299,7 +294,8 @@ c36 -99 140 -283 213 -381 98 -131 250 -277 372 -358 95 -64 258 -151 281
                 <p class="wrap-text" style="text-align: center"><strong>@hortaconnect</strong></p>
               </div>
               <div class="f-sub">
-                <a href="https://instagram.com/hortaconnect" class="f-wrap" href="https://www.instagram.com/hortaConnect/">
+                <a href="https://instagram.com/hortaconnect" class="f-wrap"
+                  href="https://www.instagram.com/hortaConnect/">
                   <img class="wrap-icon" src="./src/icone/instagram.webp" alt="Instagram">
                 </a>
                 <a href="https://twitter.com/hortaconnect" class="f-wrap" href="https://twitter.com/hortaConnect">
@@ -328,8 +324,7 @@ c36 -99 140 -283 213 -381 98 -131 250 -277 372 -358 95 -64 258 -151 281
       </div>
     </div>
   </footer>
-  <script src="./js/main.js"></script>
-  <script src="js/sobrenos.js"></script>
+  <script src="./js/main.js" defer></script>
 </body>
 
 </html>

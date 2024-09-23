@@ -1,10 +1,8 @@
 <?php
 include "./crud/conexao.php";
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-
     $nomeCompleto = $_POST['nome'];
     $email = $_POST['email'];
-
     $hashed_password = password_hash($_POST['senha'], PASSWORD_DEFAULT);
     $sql = "INSERT INTO usuarios (email, nomeCompleto, senha) VALUES (?,?,?)";
     $stmt = mysqli_prepare($conn, $sql);
@@ -25,20 +23,33 @@ $conn->close();
 </head>
 
 <body>
-    <div class="page">
-        <form action="" method="POST" class="formLogin">
-            <h1>Cadastre-se</h1>
-            <p>Digite os seus dados de acesso noa campos abaixo.</p>
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Insira seu e-mail" autofocus="true" name="email" />
-            <label for="nome">Nome Completo</label>
-            <input name="nome" type="text" placeholder="Insira sue nome Completo" autofocus="true" />
-            <label for="password">Senha</label>
-            <input type="password" placeholder="Digite sua senha" name="senha" />
-            <a href="loginnovo.php">Já tem acesso?</a>
-            <a href="#">Esqueci minha senha</a>
-            <a href="#"><input type="submit" value="Cadastre" class="btn" /></a>
-        </form>
+    <a href="index.php" class="back-button">
+        <img src="src/login/seta-esquerda.png" alt="Voltar" />
+    </a>
+    <div class="container">
+        <div class="left">
+            <form action="" method="POST" class="formLogin">
+                <h1>Cadastre-se</h1>
+                <p>Digite os seus dados de acesso nos campos abaixo.</p>
+                <label for="nome">Nome Completo</label>
+                <input name="nome" type="text" placeholder="Insira seu nome completo" required />
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Insira seu e-mail" required />
+                <label for="senha">Senha</label>
+                <input type="password" placeholder="Digite sua senha" name="senha" required />
+                
+                <div class="btn-container">
+                    <input type="submit" value="Cadastre" class="btn" />
+                </div>
+                
+                <p>Já tem acesso? <a href="loginnovo.php">Faça login</a></p>
+            </form>
+        </div>
+        <div class="right">
+            <div class="logo-container">
+                <img id="logo" src="src/general/logologin.png" alt="Logo da plataforma">
+            </div>
+        </div>
     </div>
 </body>
 

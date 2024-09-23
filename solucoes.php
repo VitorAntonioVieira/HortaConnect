@@ -1,6 +1,6 @@
 <?php
-session_start();
-include './crud/conexao.php';
+    session_start();
+    include './crud/conexao.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -8,7 +8,7 @@ include './crud/conexao.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="StyleSheet" href="css/soluções.css">
+    <link rel="StyleSheet" href="css/solucoes.css">
     <link rel="shortcut icon" type="imagex/png" href="./src/icone/logo-icon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,11 +68,7 @@ include './crud/conexao.php';
 
     <h1>Soluções Tecnológicas</h1>
     <p class="subtitulo">Irrigação Inteligente</p>
-    <!-- <div class="hr-container">
-    <h3 style="font-size: 40px; color: #3f753a; text-align: center; margin-top: 30px; margin-bottom: 30px; opacity: 0; animation: fadeIn 1s ease forwards; display: block; width: 100%;">Irrigação Tecnológica</h3>
-        <hr id="hr2"> -->
-    </div>
-
+    <hr id="hr2" />
     <div class="container">
         <div class="ume">
             <?php
@@ -87,9 +83,9 @@ include './crud/conexao.php';
                     echo "<img id='img-sensor' src='" . $row['foto'] . "'>";
                     echo "</div>";
                     echo "<div id='informação'>";
-                    echo "<h3>" . $row['nome'] . "</h3> <br>";
-                    echo "<p> R$ " . $row['valor'] . ",00</p> ";
-                    echo "<button id='openModal{$modal_id}Btn' class='botao-form transitionScale'>Saiba Mais</button><br>";
+                    echo "<h3>" . $row['nome'] . "</h3>";
+                    echo "<p>" . $row['valor'] . "</p>";
+                    echo "<button id='openModal{$modal_id}Btn' class='botao-form transitionScale'>Saiba Mais</button>";
                     echo "</div>";
                     echo "<div id='myModal{$modal_id}' class='modal'>";
                     echo "<div class='modal-content'>";

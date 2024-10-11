@@ -42,6 +42,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
@@ -50,7 +51,7 @@ body {
 
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 90%, rgba(106, 252, 69, 1) 100%);
     background-size: 100% 100% cover;
-    background-position: center;
+    background: center no-repeat;
 
     animation: gradient 5s linear infinite alternate;
 }
@@ -67,7 +68,7 @@ body {
     visibility: hidden;
 }
 
-.navbar.navbar.fixed-top {
+.navbar.fixed-top {
     display: none;
 }
 
@@ -84,6 +85,35 @@ nav.header {
 nav.scrolled {
     background-color: var(--white);
     padding: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #ffffff;
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px;
+}
+
+.menu-option {
+    width: 100%;
+    padding: 10px;
+}
+
+.menu-option a {
+    text-decoration: none;
+    color: #000000;
+    font-family: var(--s-font);
+    font-size: 18px;
 }
 
 .info {
@@ -178,6 +208,10 @@ nav.scrolled {
 
 .menu li ul li a:hover {
     background-color: #f0f0f0;
+}
+
+.menu-button {
+    display: none;
 }
 
 .login-btn {
@@ -646,7 +680,7 @@ footer {
     width: 15vw;
     height: 12vh;
 
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -710,12 +744,27 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .navbar.navbar.fixed-top {
-        display: block;
+
+    .hideOnMobile {
+        display: none;
     }
 
-    nav {
-        display: none;
+    .menu-button {
+        display: block;
+        width: auto;
+    }
+
+    .login-btn {
+        width: 18vw;
+    }
+
+    .menu {
+        padding: 10px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: flex-end;
     }
 
     .content {
@@ -864,7 +913,7 @@ footer {
     }
 
     #mockup {
-        width: 200%;
+        width: 100%;
         height: 450px;
     }
 

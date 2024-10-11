@@ -34,7 +34,7 @@ function typeWrite(elemento) {
 const titulo = document.querySelector('#panel-text');
 typeWrite(titulo);
 
-window.revelar = ScrollReveal({reset:true});
+window.revelar = ScrollReveal({ reset: true });
 
 revelar.reveal('.hidden', {
     duration: 1500,
@@ -45,4 +45,29 @@ revelar.reveal('.hidden-v', {
     duration: 1500,
     distance: '90px',
     delay: 300
+});
+
+function openMenu() {
+    let list = document.querySelector('.sidebar');
+
+    list.style.display = 'flex';
+}
+
+function closeMenu() {
+    let list = document.querySelector('.sidebar');
+
+    list.style.display = 'none';
+}
+
+document.querySelector('.menu-button').addEventListener('click', () => {
+    let list = document.querySelector('.sidebar');
+
+    list.style.display = 'flex';
+});
+
+document.querySelector('#close-btn').addEventListener('click', () => {
+    console.log('eai');
+    let list = document.querySelector('.sidebar');
+
+    list.style.display = 'none';
 });

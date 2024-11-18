@@ -3,27 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esqueci a senha</title>
-    <link rel="stylesheet" href="./css/loginnovo.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
 </head>
 
 <body>
-    <div class="page">
-        <form action="crud/processar_login.php" method="POST" class="formLogin">
+    <a href="index.php" class="back-button">
+        <img src="src/login/seta-esquerda.png" alt="Voltar" />
+    </a>
+    <div class="container">
+        <div class="left">
+            <form action="crud/processar_login.php" method="POST" class="formLogin">
+                <h1>Esqueci minha senha</h1>
+                <p>Digite o e-mail associado à sua conta para recuperar sua senha.</p>
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Digite seu e-mail" autofocus="true" id="email" name="email" required />
+                
+                <div class="btn-container">
+                    <input type="submit" value="Recuperar senha" class="btn" />
+                </div>
+                
+                <p>Não tem cadastro? <a href="cadastro.php">Cadastre-se</a></p>
+            </form>
+        </div>
+        <div class="right">
             <div class="logo-container">
-                <img id="logo" src="src/general/header-logo.svg">
+                <img id="logo" src="src/general/logologin.png" alt="Logo da plataforma">
             </div>
-            <p>Digite os seus dados de acesso no campo abaixo.</p>
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" autofocus="true" id="email" name="email" />
-            <label for="senha">Senha</label>
-            <input type="password" placeholder="Digite sua senha" name="senha" id="senha" />
-            <p>Não tem cadastro? <a href="cadastro.php">Cadastre-se</a></p>
-            <a href="esqueceusenha.php" class="esqueceusenha">Esqueci minha senha</a>
-            <input type="submit" value="Entrar" class="btn" />
-        </form>
+        </div>
     </div>
 </body>
 

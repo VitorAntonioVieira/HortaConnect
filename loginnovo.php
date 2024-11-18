@@ -22,7 +22,7 @@
                 <input type="email" placeholder="Digite seu e-mail" autofocus="true" id="email" name="email" aria-label="Digite seu e-mail" />
                 <label for="senha">Senha</label>
                 <input type="password" placeholder="Digite sua senha" name="senha" id="senha" aria-label="Digite sua senha" />
-                <a href="#">Esqueceu a senha?</a>
+                <a href="esqueceusenha.php">Esqueceu a senha?</a>
                 
                 <div class="btn-container">
                     <input type="submit" value="Entrar" class="btn" />

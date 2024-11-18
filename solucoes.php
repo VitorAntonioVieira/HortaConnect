@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="StyleSheet" href="css/solucoes.css">
+    <link rel="StyleSheet" href="css/soluções.css">
     <link rel="shortcut icon" type="imagex/png" href="./src/icone/logo-icon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
